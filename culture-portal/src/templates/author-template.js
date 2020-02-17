@@ -1,5 +1,6 @@
 import React from 'react';
 import TableRow from '../components/tableRow/tableRow';
+import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
 export default ({ pageContext: { author } }) => {
   const { id, fullName, photo, description, birth, death, biography, works } = author;
@@ -16,7 +17,22 @@ export default ({ pageContext: { author } }) => {
         </div>
         <p>{description}</p>
         
-        {/* <TimeLine dataList={biography}/> */}
+        <Timeline lineColor={'#ddd'}>
+          {biography.map(
+            ({ date, description }, index) => {
+              return (
+                <TimelineItem
+                  key={`${id}${index}`}
+                  dateText={date}
+                  style={{ color: '#e86971' }}
+                >
+                  <p>{description}</p>
+                </TimelineItem>
+              )
+            }
+            )
+          }
+        </Timeline>
         
         <table border='1' style={{borderCollapse: 'collapse'}}>
           <caption>Работы автора</caption>
