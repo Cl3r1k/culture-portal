@@ -1,7 +1,8 @@
 import React from 'react';
+import TableRow from '../components/tableRow/tableRow';
 
 export default ({ pageContext: { author } }) => {
-  const { fullName, photo, description, birth, death, biography, works } = author;
+  const { id, fullName, photo, description, birth, death, biography, works } = author;
 
   return (
     <section>
@@ -14,8 +15,31 @@ export default ({ pageContext: { author } }) => {
           <img src={photo.link} alt={`${fullName}. Фотография`}/>
         </div>
         <p>{description}</p>
+        
         {/* <TimeLine dataList={biography}/> */}
-        {/* <AuthorWorkList  dataList={works}> */}
+        
+        <table border='1' style={{borderCollapse: 'collapse'}}>
+          <caption>Работы автора</caption>
+          <thead>
+            <tr>
+              <th style={{padding: 5}}>
+                Дата создания
+              </th>
+              <th style={{padding: 5}}>
+                Название произведения
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+          {works.map(
+              (work, index) => {
+                return <TableRow data={work} key={`${id}${index}`}/>
+              }
+            )
+          }
+          </tbody>
+        </table>
+
         <div>
           Photo gallery with author's picture and pictures of his/her works
         </div>

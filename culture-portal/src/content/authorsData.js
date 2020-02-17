@@ -13,7 +13,7 @@
 // * It's okay if not every element (timeline, video, photo gallery, map)
 // * will be present on every page
 
-exports.authorsData = [
+exports.authors = [
   {
     id: 0,
     name: 'Yakub',
@@ -131,7 +131,7 @@ exports.authorsData = [
           description: 'Повесть «В глубине Полесья»',
         },
         {
-          date: '1930 - 1935 год',
+          date: '1930 - 1935 годы',
           description: 'Циклы стихов «Колхозное», «Осеннее», повесть «Отщепенец». События революции и гражданской войны отражены в повести «Трясина»',
         },
         {
