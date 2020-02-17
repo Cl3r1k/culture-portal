@@ -4,7 +4,7 @@ import Layout from "../components/base/Layout"
 export default () => {
   return (
     <Layout>
-      <div class="styleguide-page">
+      <div className="styleguide-page">
         <div>Style Guide</div>
       </div>
     </Layout>

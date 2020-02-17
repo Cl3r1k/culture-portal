@@ -2,7 +2,7 @@ import React from "react"
 
 export default ({ pageContext: { author } }) => (
   <section>
-    <div class="author-page">
+    <div className="author-page">
       <h1>
         {author.name} {author.surname}
       </h1>

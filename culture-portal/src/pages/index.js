@@ -4,7 +4,7 @@ import Layout from "../components/base/Layout"
 export default () => {
   return (
     <Layout>
-      <div class="home-page">
+      <div className="home-page">
         <div>
           Example of the Author page: <a href="/Kupala">Link</a>{" "}
         </div>
