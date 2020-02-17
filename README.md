@@ -22,7 +22,7 @@ _[Musmen](https://github.com/musmen)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+|   2 hours  | create poets test data file                   |
 
 _[niki_night](https://github.com/)_
 
