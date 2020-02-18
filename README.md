@@ -12,7 +12,7 @@ _[Deadline](https://github.com/deadline2020)_
 | add hours  | describe task                                 |
 
 
-_[MariaV](https://github.com/)_
+_[MariaV](https://github.com/kelbitskaya)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
@@ -28,7 +28,7 @@ _[Musmen](https://github.com/musmen)_
 |  0.5 hour  | implement vertical time-line for biography    |
 |   1 hour   | author-page component refactoring             |
 
-_[niki_night](https://github.com/)_
+_[niki_night](https://github.com/ViktoriyaVorozhun)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
@@ -38,7 +38,9 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+| 6h         | Learning main stack (react+gatsby+contentful) |
+| 1h         | put content in 'contentful'                   |
+| 3h         | implement 'team-page'                         |
 
 ### The main difficulties occurred during teamwork:
 1. ---
