@@ -3,15 +3,13 @@ import { Link } from "gatsby"
 import AuthorCard from "../AuthorCard"
 
 export default props => {
-  const { filteredArrOfPoets } = props
-  console.log(filteredArrOfPoets);
-  
+  const { filteredArrOfAuthors } = props
   return (
     <ul className="authors-list">
-      {filteredArrOfPoets.map(card => {
+      {filteredArrOfAuthors.map(card => {
         return (
           <li className="authors-list__li" key={card.id}>
-            <Link to={`/${card.name}/`}>
+            <Link to={`/${card.surname}/`}>
               <AuthorCard card={card} />
             </Link>
           </li>
