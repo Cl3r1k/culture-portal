@@ -1,4 +1,4 @@
-const data = require('./src/content/authorsData');
+const data = require('./src/data/authors');
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions;

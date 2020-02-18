@@ -1,60 +1,53 @@
 import React from 'react';
-import TableRow from '../components/tableRow/tableRow';
-import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+
+import AuthorCard from '../components/AuthorCard/AuthorCard';
+import Table from '../components/Table/Table';
+import TableRow from '../components/TableRow/TableRow';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+
+import AUTHOR_WORKS from '../constants/constants';
+const {TABLE_CAPTION, COLUMN_CAPTIONS} = AUTHOR_WORKS;
 
 export default ({ pageContext: { author } }) => {
-  const { id, fullName, photo, description, birth, death, biography, works } = author;
+  const { id, biography, works } = author;
 
   return (
     <section>
       <div className='author-page'>
-        <h1>
-          {fullName}
-        </h1>
-        <p>{birth.date} - {death.date}</p>
-        <div>
-          <img src={photo.link} alt={`${fullName}. Фотография`}/>
-        </div>
-        <p>{description}</p>
+        <AuthorCard author={author}/>
         
-        <Timeline lineColor={'#ddd'}>
-          {biography.map(
-            ({ date, description }, index) => {
-              return (
-                <TimelineItem
-                  key={`${id}${index}`}
-                  dateText={date}
-                  style={{ color: '#e86971' }}
-                >
-                  <p>{description}</p>
-                </TimelineItem>
-              )
-            }
+        <Timeline lineColor={'#dddddd'}>
+          {
+            biography.map(
+              ({ date, description }, index) => {
+                return (
+                  <TimelineItem
+                    key={`${id}${index}`}
+                    dateText={date}
+                    style={{ color: '#e86971' }}
+                  >
+                    <p>{description}</p>
+                  </TimelineItem>
+                )
+              }
             )
           }
         </Timeline>
         
-        <table border='1' style={{borderCollapse: 'collapse'}}>
-          <caption>Работы автора</caption>
+        <Table caption={TABLE_CAPTION}>
           <thead>
-            <tr>
-              <th style={{padding: 5}}>
-                Дата создания
-              </th>
-              <th style={{padding: 5}}>
-                Название произведения
-              </th>
-            </tr>
+            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true}/>
           </thead>
           <tbody>
-          {works.map(
-              (work, index) => {
-                return <TableRow data={work} key={`${id}${index}`}/>
-              }
-            )
-          }
+            {
+              works.map(
+                (work, index) => {
+                  return <TableRow data={work} isHeadRow={false} key={`${id}${index}`}/>
+                }
+              )
+            }
           </tbody>
-        </table>
+        </Table>
 
         <div>
           Photo gallery with author's picture and pictures of his/her works

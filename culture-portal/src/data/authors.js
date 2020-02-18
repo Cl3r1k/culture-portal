@@ -95,10 +95,6 @@ exports.authors = [
           date: '1946 - 1956 годы',
           description: 'Депутат ВС СССР',
         },
-        {
-          date: '1946 - 1956 годы',
-          description: 'Депутат ВС СССР',
-        },
       ],
     works:
       [
