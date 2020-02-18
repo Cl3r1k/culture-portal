@@ -17,6 +17,7 @@
     "gatsby": "^2.19.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-modal-video": "^1.2.3",
     "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {

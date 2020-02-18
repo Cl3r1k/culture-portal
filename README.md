@@ -27,6 +27,7 @@ _[Musmen](https://github.com/musmen)_
 |   1 hour   | implement list of artist's works              |
 |  0.5 hour  | implement vertical time-line for biography    |
 |   1 hour   | author-page component refactoring             |
+|  1.5 hour  | implement modal youtube-video window          |
 
 _[niki_night](https://github.com/)_
 

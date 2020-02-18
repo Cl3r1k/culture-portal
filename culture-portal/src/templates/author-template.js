@@ -4,12 +4,13 @@ import AuthorCard from '../components/AuthorCard/AuthorCard';
 import Table from '../components/Table/Table';
 import TableRow from '../components/TableRow/TableRow';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import VideoWindow from '../components/VideoWindow/VideoWindow';
 
 import AUTHOR_WORKS from '../constants/constants';
 const {TABLE_CAPTION, COLUMN_CAPTIONS} = AUTHOR_WORKS;
 
 export default ({ pageContext: { author } }) => {
-  const { id, biography, works } = author;
+  const { id, fullName, biography, works, video } = author;
 
   return (
     <section>
@@ -49,12 +50,10 @@ export default ({ pageContext: { author } }) => {
           </tbody>
         </Table>
 
+        <VideoWindow video={video} about={fullName}/>
+
         <div>
           Photo gallery with author's picture and pictures of his/her works
-        </div>
-        <div>
-          Youtube video about the author / works / period of time author lived.
-          Video must open in a new overlay (modal)
         </div>
         <div>
           Place of author's major activity on a map: google / openstreetmap
