@@ -34,7 +34,9 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+| 6h         | Learning main stack (react+gatsby+contentful) |
+| 1h         | put content in 'contentful'                   |
+| 3h         | implement 'team-page'                         |
 
 ### The main difficulties occurred during teamwork:
 1. ---

@@ -1,13 +1,38 @@
 import React from 'react';
 
-export default (props) => {
-  const { name, nickName, githubUrl, avatar, workLog } = props;
+const Developer = ({
+  content: {
+    name,
+    nickName,
+    description: {
+      description,
+    },
+    avatar: {
+      file: {
+        url,
+      }
+    },
+    githubUrl: {
+      githubUrl,
+    },
+    contribution: {
+      contribution,
+    }
+  }
+}) => {
+
   return (
     <div className="developer-card">
-      <div>{name}</div>
+      <h2>{name}</h2>
+      <img src={url} alt={nickName}></img>
       <a href={githubUrl} target="_blank" rel="noopener noreferrer">{nickName}</a>
-      <img src={avatar} alt="avatar"></img>      
-      <div>{workLog}</div>
+      <p>{description}</p>
+      <div>
+        Contribution info:
+        {contribution}
+      </div>
     </div>
   );
 }
+
+export default Developer;
