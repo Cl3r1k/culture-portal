@@ -1,16 +1,26 @@
 import React from 'react';
 
-export default ({data}) => {
-  const {date, description} = data;
+const TableRow = ({ data, isHeadRow }) => {
+  const cellDataList = Object.values(data);
+  const styleObj = {padding: 5};
 
   return (
     <tr>
-      <td style={{padding: 5}}>
-        {date}
-      </td>
-      <td style={{padding: 5}}>
-        {description}
-      </td>
+      {
+        cellDataList.map((cellData) => {
+          return isHeadRow ? (
+            <th style={styleObj} key={cellData}>
+              {cellData}
+            </th>
+          ) : (
+            <td style={styleObj} key={cellData}>
+              {cellData}
+            </td>
+          )
+        })
+      }
     </tr>
   );
 }
+
+export default TableRow;
