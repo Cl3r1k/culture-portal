@@ -22,7 +22,11 @@ _[Musmen](https://github.com/musmen)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+|   2 hours  | create poets test data file                   |
+|   3 hours  | implement author-page generation              |
+|   1 hour   | implement list of artist's works              |
+|  0.5 hour  | implement vertical time-line for biography    |
+|   1 hour   | author-page component refactoring             |
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
 
