@@ -45,11 +45,10 @@ export default ({ pageContext: { author } }) => {
         </Table>
 
         <VideoWindow video={video} about={fullName}/>
-
+        <Map data={author} />
         <div>
           Photo gallery with author's picture and pictures of his/her works
         </div>
-          <Map data={author} />
         <div>
           It's okay if not every element (timeline, video, photo gallery, map)
           will be present on every page
