@@ -38,11 +38,12 @@ class VideoWindow extends React.Component {
     return (
       <div>
         <h3>{description}</h3>
-        <img 
-          src={imageURL} 
-          alt={description}
-          onClick={this.openModal} 
-        />
+        <button onClick={this.openModal}>
+          <img 
+            src={imageURL} 
+            alt={description}
+          />
+        </button>
         <ModalVideo 
           channel='youtube' 
           isOpen={isOpen} 
