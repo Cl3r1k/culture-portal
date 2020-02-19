@@ -1,7 +1,7 @@
 import React from "react"
 
-export default props => {
-  const { card } = props
+const AuthorInfo = (props) => {
+  const { card } = props;
   return (
     <div className="author-card">
       <img
@@ -18,5 +18,7 @@ export default props => {
         {card.description}
       </p>
     </div>
-  )
+  );
 }
+
+export default AuthorInfo;

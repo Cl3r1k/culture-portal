@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-
-import AuthorsList from "../AuthorsList"
-import Search from "../Search"
-
+import AuthorsList from "../AuthorsList/AuthorsList"
+import Search from "../Search/Search"
 import authorsData from "../../data/authors"
 
 class AuthorsListWrapper extends Component {
