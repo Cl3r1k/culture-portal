@@ -5,10 +5,11 @@ import TableRow from "../components/TableRow/TableRow"
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
 import Map from "../components/author/Map/Map"
 import { AUTHOR_WORKS } from "../helpers/Constants"
+import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
 const { TABLE_CAPTION, COLUMN_CAPTIONS } = AUTHOR_WORKS
 
 export default ({ pageContext: { author } }) => {
-  const { id, biography, works } = author
+  const { id, biography, works, gallery } = author
 
   return (
     <section>
@@ -42,9 +43,12 @@ export default ({ pageContext: { author } }) => {
           </tbody>
         </Table>
 
-        <div>
-          Photo gallery with author's picture and pictures of his/her works
+        <div className="photo-gallery">
+          <PhotoGallery
+            data={gallery}
+          />
         </div>
+
         <div>
           Youtube video about the author / works / period of time author lived.
           Video must open in a new overlay (modal)

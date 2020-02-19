@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/base/Layout"
-import AuthorsListWrapper from "../components/AuthorsListWrapper"
+import AuthorsListWrapper from "../components/AuthorsListWrapper/AuthorsListWrapper"
 
 export default () => {
   return (
