@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Developer from '../Developer/Developer';
+import Developer from "../Developer/Developer"
 
 const DevelopersList = () => (
   <StaticQuery
-      query={graphql`
+    query={graphql`
       {
         allContentfulDeveloper {
           edges {
@@ -31,17 +31,10 @@ const DevelopersList = () => (
         }
       }
     `}
+    render={({ allContentfulDeveloper: { edges } }) =>
+      edges.map(({ node }) => <Developer key={node.id} content={node} />)
+    }
+  />
+)
 
-      render={({
-        allContentfulDeveloper: {
-          edges
-        }
-      }) => (
-          edges.map(({ node }) => (
-            <Developer key={node.id} content={node} />
-          ))
-        )}
-    />
-);
-
-export default DevelopersList;
+export default DevelopersList

@@ -1,38 +1,31 @@
-import React from 'react';
+import React from "react"
 
 const Developer = ({
   content: {
     name,
     nickName,
-    description: {
-      description,
-    },
+    description: { description },
     avatar: {
-      file: {
-        url,
-      }
+      file: { url },
     },
-    githubUrl: {
-      githubUrl,
-    },
-    contribution: {
-      contribution,
-    }
-  }
+    githubUrl: { githubUrl },
+    contribution: { contribution },
+  },
 }) => {
-
   return (
     <div className="developer-card">
       <h2>{name}</h2>
       <img src={url} alt={nickName}></img>
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">{nickName}</a>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        {nickName}
+      </a>
       <p>{description}</p>
       <div>
         Contribution info:
         {contribution}
       </div>
     </div>
-  );
+  )
 }
 
-export default Developer;
+export default Developer
