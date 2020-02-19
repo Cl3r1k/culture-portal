@@ -6,4 +6,14 @@ const AUTHOR_WORKS = {
   },
 }
 
-export default AUTHOR_WORKS
+const WORKLOG_TABLE_DATA = {
+  COLUMN_CAPTIONS: {
+    FIRST_COLUMN: 'Spent time',
+    SECOND_COLUMN: 'Feature',
+  },
+};
+
+export {
+  AUTHOR_WORKS,
+  WORKLOG_TABLE_DATA,
+};
