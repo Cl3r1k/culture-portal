@@ -1,12 +1,12 @@
-import React from 'react'
-import Layout from '../components/base/Layout'
+import React from "react"
+import Layout from "../components/base/Layout"
+import AuthorsListWrapper from "../components/AuthorsListWrapper/AuthorsListWrapper"
 
 export default () => {
   return (
     <Layout>
-      <div className='authors-page'>
-        <div>Search</div>
-        <div>Authors List</div>
+      <div className="authors-page">
+        <AuthorsListWrapper />
       </div>
     </Layout>
   )

@@ -1,9 +1,19 @@
 const AUTHOR_WORKS = {
-  TABLE_CAPTION: 'Работы автора',
+  TABLE_CAPTION: "Работы автора",
   COLUMN_CAPTIONS: {
-    FIRST_COLUMN: 'Дата создания',
-    SECOND_COLUMN: 'Название произведения',
+    FIRST_COLUMN: "Дата создания",
+    SECOND_COLUMN: "Название произведения",
+  },
+}
+
+const WORKLOG_TABLE_DATA = {
+  COLUMN_CAPTIONS: {
+    FIRST_COLUMN: 'Spent time',
+    SECOND_COLUMN: 'Feature',
   },
 };
 
-export default AUTHOR_WORKS;
+export {
+  AUTHOR_WORKS,
+  WORKLOG_TABLE_DATA,
+};
