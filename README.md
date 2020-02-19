@@ -9,7 +9,8 @@ _[Deadline](https://github.com/deadline2020)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+|   3hour    | implement list of authors component           |
+|   3hour    | implement search component                    |
 
 
 _[MariaV](https://github.com/)_
