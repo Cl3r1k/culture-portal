@@ -18,6 +18,7 @@ _[MariaV](https://github.com/kelbitskaya)_
 | ---------- | --------------------------------------------- |
 | add hours  | describe task                                 |
 
+
 _[Musmen](https://github.com/musmen)_
 
 | time spent | feature                                       |
@@ -28,11 +29,13 @@ _[Musmen](https://github.com/musmen)_
 |  0.5 hour  | implement vertical time-line for biography    |
 |   1 hour   | author-page component refactoring             |
 
+
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
 | add hours  | describe task                                 |
+
 
 _[Cl3r1k](https://github.com/cl3r1k)_
 
@@ -41,6 +44,7 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 | 6h         | Learning main stack (react+gatsby+contentful) |
 | 1h         | put content in 'contentful'                   |
 | 3h         | implement 'team-page'                         |
+| 3h         | implement 'worklog-page'                      |
 
 ### The main difficulties occurred during teamwork:
 1. ---
@@ -51,7 +55,7 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 ### Self evaluation:
 
 1. #### Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md
-2. #### 15.02.2020 / 27.02.2020
+2. #### 15.02.2020 / 29.02.2020
 
 ### Total
 

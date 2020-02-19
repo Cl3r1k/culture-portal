@@ -173,7 +173,7 @@ exports.authors = [
     fullName: 'Григорий Иванович Бородулин',
     photo:
       {
-        link: 'http://calendar.somb.ru/images/2020/2/24cms-image-000059480.jpg',
+        link: 'https://www.belnovosti.by/sites/default/files/article/13-12-2016/233.jpg',
         path: '*локальный путь на проекте - если будет надо*',
       },
     description: 'Советский и белорусский поэт, эссеист, переводчик. Народный поэт Беларуси',
@@ -254,7 +254,7 @@ exports.authors = [
     gallery:
       [
         {
-          link: 'http://by24.org/wp-content/uploads/2014/03/rygor_baradulin.jpg',
+          link: 'https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich7.jpg',
           path: 'локальный путь...',
         },
         {
