@@ -10,16 +10,13 @@ class VideoWindow extends React.Component {
     this.state = {
       isOpen: false,
     };
-
-    this.openModal = this.openModal.bind(this);
-    this.onClose = this.onClose.bind(this);
   }
 
-  openModal() {
+  openModal = () => {
     this.setState({ isOpen: true });
   }
 
-  onClose() {
+  onClose = () => {
     this.setState({ isOpen: false });
   }
 
