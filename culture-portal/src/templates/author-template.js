@@ -2,7 +2,7 @@ import React from 'react';
 
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 import Table from '../components/Table/Table';
-import TableRow from '../components/TableRow/TableRow';
+import TableRow from '../components/tableRow/tableRow';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 
 import { AUTHOR_WORKS } from '../constants/constants';

@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from '../Table/Table';
-import TableRow from '../TableRow/TableRow';
+import TableRow from '../tableRow/tableRow';
 
 // Constants
 import { WORKLOG_TABLE_DATA } from '../../constants/constants';
