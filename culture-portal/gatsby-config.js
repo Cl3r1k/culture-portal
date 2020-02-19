@@ -4,9 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-if (process.env.NODE_ENV === "development") {
-  require("dotenv").config();
-}
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   /* Your site config here */
