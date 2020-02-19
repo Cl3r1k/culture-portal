@@ -5,7 +5,7 @@ import Table from '../components/Table/Table';
 import TableRow from '../components/TableRow/TableRow';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 
-import AUTHOR_WORKS from '../constants/constants';
+import { AUTHOR_WORKS } from '../constants/constants';
 const {TABLE_CAPTION, COLUMN_CAPTIONS} = AUTHOR_WORKS;
 
 export default ({ pageContext: { author } }) => {
