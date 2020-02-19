@@ -14,9 +14,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.19.7",
+    "gatsby-source-contentful": "^2.1.86",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
