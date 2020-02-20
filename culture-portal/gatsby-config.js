@@ -6,4 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  plugins: [
+    {
+      resolve: `@lekoarts/gatsby-theme-styleguide`,
+      options: {
+        basePath: `/`,
+      }
+    }, {
+      resolve: `gatsby-plugin-sass`,
+    },
+  ]
 }

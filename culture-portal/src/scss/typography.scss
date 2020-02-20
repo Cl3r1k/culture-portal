@@ -1,0 +1,23 @@
+.heading1 {
+  @include heading-style(36, 28);
+}
+
+.heading2 {
+  @include heading-style(30, 24);
+}
+
+.heading3 {
+  @include heading-style(24, 20);
+}
+
+.heading4 {
+  @include heading-style(18, 18);
+}
+
+.heading5 {
+  @include heading-style(14, 16);
+}
+
+.heading6 {
+  @include heading-style(12, 14);
+}
