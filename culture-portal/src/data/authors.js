@@ -168,7 +168,8 @@ exports.authors = [
       },
     ],
     video: {
-      link: "https://youtu.be/71kJB1j7Xwg?t=34",
+      youtubeId: '71kJB1j7Xwg',
+      startTime: 34,
     },
   },
   {
@@ -280,7 +281,8 @@ exports.authors = [
         },
       ],
     video: {
-      link: "https://www.youtube.com/watch?v=WzJFsmUvTzI&feature=youtu.be&t=3",
+      youtubeId: 'WzJFsmUvTzI',
+      startTime: 3,
     },
   },
   {
@@ -439,7 +441,8 @@ exports.authors = [
       },
     ],
     video: {
-      link: "https://www.youtube.com/watch?v=wpC11RbWnPE",
+      youtubeId: 'wpC11RbWnPE',
+      startTime: 3,
     },
   },
 ]

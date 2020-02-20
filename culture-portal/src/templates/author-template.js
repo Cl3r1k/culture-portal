@@ -1,16 +1,16 @@
-import React from "react"
-import AuthorCard from "../components/AuthorCard/AuthorCard"
-import Table from "../components/Table/Table"
-import TableRow from "../components/TableRow/TableRow"
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
-import Map from "../components/author/Map/Map"
-import { AUTHOR_WORKS } from "../helpers/Constants"
+import React from 'react';
+import AuthorCard from '../components/AuthorCard/AuthorCard';
+import Table from '../components/Table/Table';
+import TableRow from '../components/TableRow/TableRow';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import VideoWindow from '../components/VideoWindow/VideoWindow';
+import Map from "../components/author/Map/Map";
+import { AUTHOR_WORKS } from '../helpers/Constants';
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
-const { TABLE_CAPTION, COLUMN_CAPTIONS } = AUTHOR_WORKS
+const {TABLE_CAPTION, COLUMN_CAPTIONS} = AUTHOR_WORKS;
 
 export default ({ pageContext: { author } }) => {
-  const { id, biography, works, gallery } = author
-
+  const { id, fullName, biography, works, video, gallery } = author;
   return (
     <section>
       <div className="author-page">
@@ -43,17 +43,10 @@ export default ({ pageContext: { author } }) => {
           </tbody>
         </Table>
 
-        <div className="photo-gallery">
-          <PhotoGallery
-            data={gallery}
-          />
-        </div>
-
-        <div>
-          Youtube video about the author / works / period of time author lived.
-          Video must open in a new overlay (modal)
-        </div>
+        <VideoWindow video={video} about={fullName}/>
         <Map data={author} />
+        <PhotoGallery data={gallery}/>
+
         <div>
           It's okay if not every element (timeline, video, photo gallery, map)
           will be present on every page

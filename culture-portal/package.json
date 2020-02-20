@@ -21,8 +21,9 @@
     "react": "^16.12.0",
     "react-bigpicture": "^1.0.26",
     "react-dom": "^16.12.0",
-    "react-mapbox-gl": "^4.8.2",
-    "vertical-timeline-component-for-react": "^1.0.6"
+    "react-modal-video": "^1.2.3",
+    "vertical-timeline-component-for-react": "^1.0.6",
+    "react-mapbox-gl": "^4.8.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

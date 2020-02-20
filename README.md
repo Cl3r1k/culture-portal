@@ -9,8 +9,9 @@ _[Deadline](https://github.com/deadline2020)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-|   3hour    | implement list of authors component           |
-|   3hour    | implement search component                    |
+|   3 hours  | implement list of authors component           |
+|   3 hours  | implement search component                    |
+|   2 hours  | implement photo-gallery component             |
 
 
 _[MariaV](https://github.com/)_
@@ -25,6 +26,11 @@ _[Musmen](https://github.com/musmen)_
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
 |   2 hours  | create poets test data file                   |
+|   3 hours  | implement author-page generation              |
+|   1 hour   | implement list of artist's works              |
+|  0.5 hour  | implement vertical time-line for biography    |
+|   1 hour   | author-page component refactoring             |
+|   2 hour   | implement modal youtube-video window          |
 
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
