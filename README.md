@@ -9,7 +9,8 @@ _[Deadline](https://github.com/deadline2020)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+|   3hour    | implement list of authors component           |
+|   3hour    | implement search component                    |
 
 
 _[MariaV](https://github.com/)_
@@ -18,23 +19,34 @@ _[MariaV](https://github.com/)_
 | ---------- | --------------------------------------------- |
 | add hours  | describe task                                 |
 
+
 _[Musmen](https://github.com/musmen)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+|   2 hours  | create poets test data file                   |
+|   3 hours  | implement author-page generation              |
+|   1 hour   | implement list of artist's works              |
+|  0.5 hour  | implement vertical time-line for biography    |
+|   1 hour   | author-page component refactoring             |
+|   2 hour   | implement modal youtube-video window          |
 
-_[niki_night](https://github.com/)_
+
+_[niki_night](https://github.com/ViktoriyaVorozhun)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
 | add hours  | describe task                                 |
+
 
 _[Cl3r1k](https://github.com/cl3r1k)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+| 6h         | Learning main stack (react+gatsby+contentful) |
+| 1h         | put content in 'contentful'                   |
+| 3h         | implement 'team-page'                         |
+| 3h         | implement 'worklog-page'                      |
 
 ### The main difficulties occurred during teamwork:
 1. ---
@@ -45,7 +57,7 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 ### Self evaluation:
 
 1. #### Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md
-2. #### 15.02.2020 / 27.02.2020
+2. #### 15.02.2020 / 29.02.2020
 
 ### Total
 

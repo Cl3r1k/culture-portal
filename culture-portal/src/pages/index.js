@@ -6,7 +6,7 @@ export default () => {
     <Layout>
       <div className="home-page">
         <div>
-          Example of the Author page: <a href="/Kupala">Link</a>{" "}
+          Example of the Author page: <a href="/Kolas">Link</a>{" "}
         </div>
         <div>portal's description</div>
         <div>'author of the day' block</div>
