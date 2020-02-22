@@ -1,0 +1,37 @@
+a {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  background-image: url('https://dewey.tailorbrands.com/production/brand_version_mockup_image/176/2678314176_d73abfaf-eadd-47ca-bfcc-fcc2b861e290.png?cb=1582210150');
+  width: 200px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.language {
+  border: 1px solid #565656;
+  padding: 7px 0;
+  span {
+    border-left: 1px solid orangered ;
+    padding: 10px;
+
+    &:first-child {
+      border: none;
+    }
+
+    &.active {
+      background: orangered;
+    }
+  }
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
