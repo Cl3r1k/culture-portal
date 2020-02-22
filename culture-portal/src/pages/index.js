@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import AuthorCard from '../components/AuthorCard/AuthorCard'
 import { PORTAL_DESCRIPTION } from '../helpers/Constants'
-import getRandomAuthor from "../helpers/Utils"
+import getDayAuthor from "../helpers/Utils"
 import data from "../data/authors"
 
 export default () => {
@@ -12,8 +12,8 @@ export default () => {
   const descriptionList = PORTAL_DESCRIPTION[language];
 
   const { authors } = data;
-  const randomAuthor = getRandomAuthor(authors);
-  const { surname } = randomAuthor;
+  const dayAuthor = getDayAuthor(authors);
+  const { surname } = dayAuthor;
 
   return (
     <Layout>
@@ -25,7 +25,7 @@ export default () => {
         <div className="day-author">
           <h2>Автор дня</h2>
           <Link to={`/${surname}`}>
-            <AuthorCard author={randomAuthor} />
+            <AuthorCard author={dayAuthor} />
           </Link>
         </div>
       </div>
