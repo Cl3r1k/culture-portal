@@ -1,0 +1,21 @@
+.navigation {
+  margin-left: -24px;
+  margin-right: -24px;
+  background: orangered;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    li {
+      padding: 10px;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}

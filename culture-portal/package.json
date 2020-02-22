@@ -14,11 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@lekoarts/gatsby-theme-styleguide": "^1.0.9",
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/icons": "^4.9.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.19.7",
+    "gatsby-plugin-sass": "^2.1.28",
+    "node-sass": "^4.13.1",
     "gatsby-source-contentful": "^2.1.86",
     "mapbox-gl": "^1.7.0",
     "react": "^16.12.0",
+    "theme-ui": "^0.3.1"
     "react-bigpicture": "^1.0.26",
     "react-dom": "^16.12.0",
     "react-modal-video": "^1.2.3",

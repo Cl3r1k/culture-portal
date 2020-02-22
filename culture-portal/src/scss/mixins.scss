@@ -1,0 +1,5 @@
+@mixin heading-style($fontSize, $lineHeight) {
+  font-size: unquote($fontSize + 'px');
+  line-height: unquote($lineHeight + 'px');
+
+}

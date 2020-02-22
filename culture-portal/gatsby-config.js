@@ -20,5 +20,13 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-  ],
+    {
+      resolve: `@lekoarts/gatsby-theme-styleguide`,
+      options: {
+        basePath: `/`,
+      }
+    }, {
+      resolve: `gatsby-plugin-sass`,
+    },
+  ]
 }
