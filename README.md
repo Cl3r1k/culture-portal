@@ -12,6 +12,7 @@ _[Deadline](https://github.com/deadline2020)_
 |   3 hours  | implement list of authors component           |
 |   3 hours  | implement search component                    |
 |   2 hours  | implement photo-gallery component             |
+|   3 hours  | add information about poets                   |
 
 
 _[MariaV](https://github.com/)_
