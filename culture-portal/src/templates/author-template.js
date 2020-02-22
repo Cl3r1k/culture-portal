@@ -25,7 +25,9 @@ export default ({ pageContext: { author } }) => {
                 dateText={date}
                 style={{ color: "#e86971" }}
               >
-                <p>{description}</p>
+                <p style={{ color: "#ffffff" }}>
+                  {description}
+                </p>
               </TimelineItem>
             )
           })}
