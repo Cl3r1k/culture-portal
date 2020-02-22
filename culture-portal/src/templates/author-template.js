@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from "../components/base/Layout"
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 import Table from '../components/Table/Table';
 import TableRow from '../components/TableRow/TableRow';
@@ -12,7 +13,7 @@ const {TABLE_CAPTION, COLUMN_CAPTIONS} = AUTHOR_WORKS;
 export default ({ pageContext: { author } }) => {
   const { id, fullName, biography, works, video, gallery } = author;
   return (
-    <section>
+    <Layout>
       <div className="author-page">
         <AuthorCard author={author} />
 
@@ -52,6 +53,6 @@ export default ({ pageContext: { author } }) => {
           will be present on every page
         </div>
       </div>
-    </section>
+    </Layout>
   )
 }
