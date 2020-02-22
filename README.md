@@ -9,8 +9,9 @@ _[Deadline](https://github.com/deadline2020)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-|   3hour    | implement list of authors component           |
-|   3hour    | implement search component                    |
+|   3 hours  | implement list of authors component           |
+|   3 hours  | implement search component                    |
+|   2 hours  | implement photo-gallery component             |
 
 
 _[MariaV](https://github.com/)_
