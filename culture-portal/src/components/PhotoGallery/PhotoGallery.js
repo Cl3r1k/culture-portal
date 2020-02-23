@@ -1,26 +1,26 @@
 import React from 'react';
-import { BigPictureGallery } from "react-bigpicture";
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css'
 
 const PhotoGallery = (props) => {
   const { data } = props;
   const arrImages = data.map(obj => {
     return (
-      <img
-        className="photo-gallery__photo"
-        src={obj.link}
-        alt="portrait"
-        key={obj.link}
-      />
+      {
+        original: obj.link,
+        thumbnail: obj.link,
+      }
     );
   });
-
+  
   return (
     <>
       <h3>Галерея автора</h3>
       <div className="photo-gallery">
-        <BigPictureGallery loop>
-          {arrImages}
-        </BigPictureGallery>
+        <ImageGallery
+          items={arrImages}
+          showPlayButton={false}
+        />
       </div>
     </>
   );
