@@ -773,7 +773,7 @@ exports.authors = [
     surname: "Kuleshov",
     fullName: "Аркадий Александрович Кулешов",
     photo: {
-      link: "https://loviknigu.ru/data/image_author/05/78/99.jpg",
+      link: "https://coollib.net/sites/default/files/Arkadiy-Kuleshov.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
     description:
