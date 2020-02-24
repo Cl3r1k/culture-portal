@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 // ***********************
 // * Page of an author with
 
