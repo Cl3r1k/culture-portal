@@ -33,6 +33,7 @@ _[Musmen](https://github.com/musmen)_
 |   1 hour   | author-page component refactoring             |
 |   2 hours  | implement modal youtube-video window          |
 |  1.5 hours | add portal description and author of the day  |
+|   3 hours  | add information about poets in English        |
 
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
