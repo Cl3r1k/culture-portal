@@ -6,7 +6,7 @@ export default () => {
     <nav className="navigation">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="active-page">Home</Link>
         </li>
         <li>
           <Link to="/authors/">Authors</Link>

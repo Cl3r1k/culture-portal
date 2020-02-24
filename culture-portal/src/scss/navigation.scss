@@ -1,8 +1,4 @@
 .navigation {
-  margin-left: -24px;
-  margin-right: -24px;
-  background: orangered;
-  margin-bottom: 20px;
 
   ul {
     display: flex;
@@ -12,10 +8,19 @@
     li {
       padding: 10px;
 
+
       a {
         color: #ffffff;
         text-decoration: none;
+        opacity: 0.6;
+
+        &.active-page {
+          opacity: 1;
+          font-weight: 600;
+        }
       }
+
+
     }
   }
 }

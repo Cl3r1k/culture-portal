@@ -1,5 +1,13 @@
+$screen-mobile: 320px;
+
 @mixin heading-style($fontSize, $lineHeight) {
   font-size: unquote($fontSize + 'px');
   line-height: unquote($lineHeight + 'px');
 
+}
+
+@mixin media-mobile {
+  @media screen and (max-width: #{$screen-mobile}) {
+    @content;
+  }
 }

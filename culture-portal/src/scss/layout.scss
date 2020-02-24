@@ -1,11 +1,17 @@
 .wrapper {
   //background: #757575;
-  padding: 0;
-  padding-left: 0;
+
+  padding: 0 0 40px;
+  margin-bottom: 10px;
+
 
   &.MuiContainer-root {
    // padding: 0;
   }
+}
+
+.home-page-wrapper, .header-wrapper {
+  background-image: url("../../static/img/bg.png");
 }
 
 
