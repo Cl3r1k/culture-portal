@@ -3,11 +3,13 @@ import React from "react"
 const Search = (props) => {
   const { startSearch } = props;
   return (
-    <input
-      className="search-input"
-      type="search"
-      onChange={startSearch}
-    />
+    <div className="search-wrap">
+      <input
+        className="search-input"
+        type="search"
+        onChange={startSearch}
+      />
+    </div>
   );
 }
 

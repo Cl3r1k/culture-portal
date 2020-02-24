@@ -1,5 +1,8 @@
 import React from "react"
 import Layout from "../components/base/Layout"
+import LayoutWithoutNavigation from "../components/base/LayoutWithoutNavigation"
+import Typography from '@material-ui/core/Typography';
+
 import { Link } from "gatsby"
 
 import AuthorCard from '../components/AuthorCard/AuthorCard'
@@ -16,19 +19,27 @@ export default () => {
   const { surname } = dayAuthor;
 
   return (
-    <Layout>
-      <div className="home-page">
-        <div className="portal-description">
-          {descriptionList
-            .map(description => <p key={description.slice(0, 2)}>{description}</p>)}
-        </div>
-        <div className="day-author">
-          <h2>Автор дня</h2>
-          <Link to={`/${surname}`}>
-            <AuthorCard author={dayAuthor} />
-          </Link>
-        </div>
+    <>
+      <div className="home-page-wrapper">
+        <Layout>
+          <div className="portal-description">
+            {descriptionList
+              .map(description => <p key={description.slice(0, 2)}>{description}</p>)}
+          </div>
+        </Layout>
       </div>
-    </Layout>
+      <LayoutWithoutNavigation>
+        <div className="home-page">
+          <div className="day-author">
+            <Typography variant="h2" component="h2" gutterBottom>Автор дня</Typography>
+            <div className="author-info">
+              <Link to={`/${surname}`}>
+              <AuthorCard author={dayAuthor} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </LayoutWithoutNavigation>
+    </>
   )
 }
