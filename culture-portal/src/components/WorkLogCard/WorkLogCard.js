@@ -1,10 +1,7 @@
 import React from 'react';
 import Table from '../Table/Table';
-import TableRow from '../tableRow/tableRow';
-
-// Constants
-import { WORKLOG_TABLE_DATA } from '../../constants/constants';
-const { COLUMN_CAPTIONS } = WORKLOG_TABLE_DATA;
+import TableRow from '../TableRow/TableRow';
+import { useTranslation } from 'react-i18next';
 
 const WorkLogCard = ({
   content: {
@@ -17,6 +14,11 @@ const WorkLogCard = ({
     }
   }
 }) => {
+  const  { t } = useTranslation();
+  const COLUMN_CAPTIONS = {
+    FIRST_COLUMN: t('WORKLOG_TABLE_DATA.COLUMN_CAPTIONS.FIRST_COLUMN'),
+    SECOND_COLUMN: t('WORKLOG_TABLE_DATA.COLUMN_CAPTIONS.SECOND_COLUMN')
+  }
 
   return (
     <div className="worklog-card">

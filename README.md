@@ -51,6 +51,7 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 | 1h         | put content in 'contentful'                   |
 | 3h         | implement 'team-page'                         |
 | 3h         | implement 'worklog-page'                      |
+| 12h        | implement translation                         |
 
 ### The main difficulties occurred during teamwork:
 1. ---

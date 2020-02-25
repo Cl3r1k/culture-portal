@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Layout from "../components/base/Layout"
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 import Table from '../components/Table/Table';
@@ -6,12 +7,17 @@ import TableRow from '../components/TableRow/TableRow';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import VideoWindow from '../components/VideoWindow/VideoWindow';
 import Map from "../components/author/Map/Map";
-import { AUTHOR_WORKS } from '../helpers/Constants';
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
-const {TABLE_CAPTION, COLUMN_CAPTIONS} = AUTHOR_WORKS;
 
 export default ({ pageContext: { author } }) => {
+  const { t } = useTranslation();
   const { id, fullName, biography, works, video, gallery } = author;
+  const TABLE_CAPTION = t('AUTHOR_WORKS.TABLE_CAPTION')
+  const COLUMN_CAPTIONS = {
+    FIRST_COLUMN: t('AUTHOR_WORKS.COLUMN_CAPTIONS.FIRST_COLUMN'),
+    SECOND_COLUMN: t('AUTHOR_WORKS.COLUMN_CAPTIONS.SECOND_COLUMN')
+  }
+
   return (
     <Layout>
       <div className="author-page">
