@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/base/Layout"
 import WorklogTable from "../components/WorklogTable/WorklogTable"
 import SelfEvaluation from "../components/SelfEvaluation/SelfEvaluation"
+import Difficulties from "../components/Difficulties/Difficulties"
 
 export default () => {
   return (
@@ -9,12 +10,7 @@ export default () => {
       <div className="worlklog-page">
         <WorklogTable />
 
-        <h3>Main difficulties for the team during implementation</h3>
-        <ol>
-          <li>It was a good idea to use "git flow" initially</li>
-          <li>Difficulty #2</li>
-          <li>Difficulty #3</li>
-        </ol>
+        <Difficulties />
 
         <SelfEvaluation />
       </div>

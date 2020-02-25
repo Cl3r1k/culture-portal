@@ -1,9 +1,11 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
+import { useTranslation } from 'react-i18next';
 import 'react-image-gallery/styles/css/image-gallery.css'
 
 const PhotoGallery = (props) => {
   const { data } = props;
+  const { t } = useTranslation();
   const arrImages = data.map(obj => {
     return (
       {
@@ -15,7 +17,7 @@ const PhotoGallery = (props) => {
   
   return (
     <>
-      <h3>Галерея автора</h3>
+      <h3>{t('photo-gallery-header')}</h3>
       <div className="photo-gallery">
         <ImageGallery
           items={arrImages}

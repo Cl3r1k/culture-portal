@@ -1,10 +1,9 @@
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+import { useStaticQuery, graphql } from "gatsby"
 
-  // TODO: Clean up and only one language to query
-  return graphql(`
-    query programQuery {
-      allContentfulAuthor {
+export const useAuthorsMetadata = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allContentfulAuthor(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -56,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allContentfulAuthorRussian {
+      allContentfulAuthorRussian(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -108,7 +107,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allContentfulAuthorBelarusian {
+      allContentfulAuthorBelarusian(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -161,19 +160,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
+  `)
 
-    const authors = result.data.allContentfulAuthor.nodes.map(author => author.json)
-
-    authors.forEach(author => {
-      createPage({
-        path: `/${author.surname}`,
-        component: require.resolve("./src/templates/author-template.js"),
-        context: { author },
-      })
-    })
-  })
+  return data
 }

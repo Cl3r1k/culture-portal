@@ -25,6 +25,7 @@ class VideoWindow extends React.Component {
     const { video, about } = this.props;
     const { youtubeId, startTime } = video;
 
+    // TODO: implement translation for 'description'
     const description = `${about}. Видеорепортаж о жизни и творчестве`;
     const imageURL = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
     const options = {
