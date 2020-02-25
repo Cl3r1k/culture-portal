@@ -2,7 +2,7 @@ import React from "react"
 
 const TableRow = ({ data, isHeadRow }) => {
   const cellDataList = Object.values(data)
-  const styleObj = { padding: 5 }
+  const styleObj = {}
 
   return (
     <tr>

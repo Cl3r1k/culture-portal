@@ -35,7 +35,7 @@ export default ({ pageContext: { author } }) => {
 
         <Table caption={TABLE_CAPTION}>
           <thead>
-            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true} />
+            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true}/>
           </thead>
           <tbody>
             {works.map((work, index) => {

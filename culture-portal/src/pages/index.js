@@ -31,7 +31,7 @@ export default () => {
       <LayoutWithoutNavigation>
         <div className="home-page">
           <div className="day-author">
-            <Typography variant="h2" component="h2" gutterBottom>Автор дня</Typography>
+            <Typography variant="h2" component="h2" gutterBottom className="title">Автор дня</Typography>
             <div className="author-info">
               <Link to={`/${surname}`}>
               <AuthorCard author={dayAuthor} />

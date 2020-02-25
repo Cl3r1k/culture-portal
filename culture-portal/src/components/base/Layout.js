@@ -19,7 +19,7 @@ export default ({children}) => {
   <>
     <MuiThemeProvider theme={theme}>
     <CssBaseline/>
-    <div class="header-wrapper">
+    <div className="header-wrapper">
       <Container className="top-header" maxWidth="lg">
         <a href="/" className="logo"></a>
         <Navigation/>
