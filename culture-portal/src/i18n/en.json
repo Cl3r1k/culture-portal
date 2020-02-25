@@ -1,0 +1,35 @@
+{
+  "welcome": "Portal about Belarusian poets",
+  "portal-Description": [
+    "Our portal is dedicated to writers of the Republic of Belarus. In general, the task idea is good in that for the most part developers have a technical mentality and an appropriate education, environment. In the modern rhythm of life, it is not always possible to devote enough time to issues of culture and art, creativity, poetry. And often, these humanitarian spheres make it possible to find answers to some vital questions, take a different look at the world, find something new for oneself, revise values...",
+    "It is also interesting to note that one of the developers of our team is from Novosibirsk, where it was snowing this winter unlike in Belarus, but the opportunity to get acquainted so close  with the work and biography of Kupala, Borodulin, Panchenko appeared actually thanks to such prosaic words as RSSchool, React, Gatsby, GraphQL, JavaScript, Git ...)",
+    "We invite you to plunge into the beautiful world Belarusian poetry"
+  ],
+  "day-author": "Author of the day",
+  "menu": {
+    "home": "Home",
+    "authors": "Authors",
+    "team": "Team",
+    "worklog": "Worklog",
+    "styleguide": "Styleguide"
+  },
+  "AUTHOR_WORKS": {
+    "TABLE_CAPTION": "Author works",
+    "COLUMN_CAPTIONS": {
+      "FIRST_COLUMN": "Date of creation",
+      "SECOND_COLUMN": "Title of the work"
+    }
+  },
+  "WORKLOG_TABLE_DATA": {
+    "COLUMN_CAPTIONS": {
+      "FIRST_COLUMN": "Spent time",
+      "SECOND_COLUMN": "Feature"
+    }
+  },
+  "search-placeholder": "Enter author or city name",
+  "video-description": "Video report about life and work",
+  "worklog-table-header": "Worklog Table",
+  "difficulties": "Main difficulties for the team during implementation",
+  "photo-gallery-header": "Author gallery",
+  "contribution": "Contribution info:"
+}

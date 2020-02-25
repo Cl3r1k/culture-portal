@@ -1,4 +1,5 @@
 import React from "react"
+import { useTranslation } from 'react-i18next'
 
 const Developer = ({
   content: {
@@ -12,6 +13,8 @@ const Developer = ({
     contribution: { contribution },
   },
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="developer-card">
       <h2>{name}</h2>
@@ -21,7 +24,7 @@ const Developer = ({
       </a>
       <p>{description}</p>
       <div>
-        Contribution info:
+        {t('contribution')}
         {contribution}
       </div>
     </div>

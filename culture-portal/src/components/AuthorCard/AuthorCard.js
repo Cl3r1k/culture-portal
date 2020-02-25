@@ -6,7 +6,7 @@ const AuthorCard = ({ author }) => {
   return (
     <div className="author-card">
       <div>
-        <img src={photo.link} alt={`${fullName}. Фотография`} />
+        <img src={photo.link} alt={`${fullName}. PhotoFile`} />
       </div>
       <div className="author-card-info">
         <Typography variant="h4" component="h1" gutterBottom>
