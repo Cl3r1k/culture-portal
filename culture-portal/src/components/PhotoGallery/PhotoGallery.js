@@ -14,9 +14,9 @@ const PhotoGallery = (props) => {
       }
     );
   });
-  
+
   return (
-    <>
+    <div className="author-gallery">
       <h3>{t('photo-gallery-header')}</h3>
       <div className="photo-gallery">
         <ImageGallery
@@ -24,7 +24,7 @@ const PhotoGallery = (props) => {
           showPlayButton={false}
         />
       </div>
-    </>
+    </div>
   );
 }
 
