@@ -1,8 +1,8 @@
-import React from "react"
-import WorkLogCard from "../WorkLogCard/WorkLogCard"
-import { useTranslation } from "react-i18next"
-import { useWorklogMetadata } from "../../hooks/useWorklog.hook"
-import { DEVELOPERS_LANGUAGE_QUERY } from "../../helpers/Constants"
+import React from 'react'
+import WorkLogCard from '../WorkLogCard/WorkLogCard'
+import { useTranslation } from 'react-i18next'
+import { useWorklogMetadata } from '../../hooks/useWorklog.hook'
+import { DEVELOPERS_LANGUAGE_QUERY } from '../../helpers/Constants'
 
 const WorklogTable = () => {
   const { t, i18n } = useTranslation()
