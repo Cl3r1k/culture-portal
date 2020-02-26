@@ -1,0 +1,26 @@
+
+.square-wrap {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  padding: 2px 10px;
+  margin-right: 10px;
+
+  &_dark {
+    background: #303030;
+  }
+
+
+  &_white {
+    background: #fff;
+  }
+
+  &_grey {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}

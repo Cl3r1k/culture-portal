@@ -1,13 +1,13 @@
 .heading1 {
-  @include heading-style(36, 28);
+  @include heading-style(30, 28);
 }
 
 .heading2 {
-  @include heading-style(30, 24);
+  @include heading-style(26, 24);
 }
 
 .heading3 {
-  @include heading-style(24, 20);
+  @include heading-style(22, 20);
 }
 
 .heading4 {
@@ -20,4 +20,58 @@
 
 .heading6 {
   @include heading-style(12, 14);
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.base-title, .base-title_md {
+  color: rgba(255, 255, 255, 0.25);
+  margin-bottom: -23px;
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  font-style: oblique;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 900;
+  text-align: end;
+
+  &_md {
+    font-size: 2rem;
+    margin-bottom: -13px;
+  }
+
+  @media screen and (max-width: 720px){
+    font-size: 3rem;
+    &_md {
+      font-size: 1.8rem;
+      margin-bottom: -10px;
+    }
+  }
+
+  @media screen and (max-width: 520px){
+    font-size: 2rem;
+    &_md {
+      font-size: 1.6rem;
+      margin-bottom: -8px;
+    }
+  }
+
+
+}
+
+.small-title {
+  color: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 20px 0;
 }
