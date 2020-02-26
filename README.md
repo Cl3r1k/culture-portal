@@ -34,6 +34,7 @@ _[Musmen](https://github.com/musmen)_
 |   2 hours  | implement modal youtube-video window          |
 |  1.5 hours | add portal description and author of the day  |
 |   3 hours  | add information about poets in English        |
+|   3 hours  | add workflow-page with team workflow diagram  |
 
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
