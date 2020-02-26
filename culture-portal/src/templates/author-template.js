@@ -21,6 +21,7 @@ export default ({ pageContext: { author } }) => {
   return (
     <Layout>
       <div className="author-page">
+        <h1 className="page-title">{fullName}</h1>
         <AuthorCard author={author} />
         <h3>Биография</h3>
         <Timeline lineColor={"#dddddd"}>
