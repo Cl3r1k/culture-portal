@@ -3,7 +3,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     query programQuery {
-      allContentfulAuthor {
+      allContentfulAuthor(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -55,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allContentfulAuthorRussian {
+      allContentfulAuthorRussian(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -107,7 +107,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allContentfulAuthorBelarusian {
+      allContentfulAuthorBelarusian(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
