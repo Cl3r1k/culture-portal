@@ -171,7 +171,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     authorsEn.forEach((author, index) => {
       createPage({
-        path: `/${author.surname}`,
+        path: `/authors/${author.surname}`,
         component: require.resolve("./src/templates/author-template.js"),
         context: { en: author, ru: authorsRu[index] || author, by: authorsBy[index] || author },
       })
