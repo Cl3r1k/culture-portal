@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
-import { LANGUAGES, DEFAULT_LANGUAGE } from '../../helpers/Constants'
+import { LANGUAGES } from '../../helpers/Constants'
 
 const Language = () => {
   const { i18n } = useTranslation()
-  const [currentLanguage, setLanguageState] = useState(DEFAULT_LANGUAGE)
+  const [currentLanguage, setLanguageState] = useState(i18n.language)
 
   const setLanguage = (evt) => {
     if (evt.target.tagName === 'SPAN') {
-      i18n.changeLanguage(evt.target.textContent.toLowerCase())
+      i18n.changeLanguage(evt.target.textContent)
       setLanguageState(evt.target.textContent)
     }
   }
