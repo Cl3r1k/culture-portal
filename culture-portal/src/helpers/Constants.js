@@ -1,15 +1,14 @@
 export const MAPBOX_PROPS = {
-  center: [27.556373, 53.903507],
-  zoom: [5],
   mapstyle: "mapbox://styles/mapbox/light-v10",
-  containerStyle: {
+  viewport: {
     height: "500px",
     width: "100%",
+    zoom: 5,
+    latitude: 53.903507,
+    longitude: 27.556373,
+    mapboxApiAccessToken: "pk.eyJ1IjoibmlraS1uaWdodCIsImEiOiJjazZxdDFwdXYwMDVlM2pwOWg0bHk5eDBsIn0.MjJosSglMki2WEZXmgeicw",
   },
 }
-
-export const MAPBOX_TOKEN =
-  "pk.eyJ1IjoibmlraS1uaWdodCIsImEiOiJjazZxdDFwdXYwMDVlM2pwOWg0bHk5eDBsIn0.MjJosSglMki2WEZXmgeicw"
 
 export const DESCRIPTION_LIST_INDICES = [0, 1, 2]
 
