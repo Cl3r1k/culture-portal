@@ -9,8 +9,10 @@ import VideoWindow from '../components/VideoWindow/VideoWindow';
 import Map from "../components/author/Map/Map";
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
 
-export default ({ pageContext: { author } }) => {
-  const { t } = useTranslation();
+export default ({ pageContext }) => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const author = pageContext[currentLanguage];
   const { id, fullName, biography, works, video, gallery } = author;
   const TABLE_CAPTION = t('AUTHOR_WORKS.TABLE_CAPTION')
   const COLUMN_CAPTIONS = {

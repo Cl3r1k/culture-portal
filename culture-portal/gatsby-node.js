@@ -1,10 +1,9 @@
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  // TODO: Clean up and only one language to query
   return graphql(`
     query programQuery {
-      allContentfulAuthor {
+      allContentfulAuthor(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -56,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allContentfulAuthorRussian {
+      allContentfulAuthorRussian(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -108,7 +107,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allContentfulAuthorBelarusian {
+      allContentfulAuthorBelarusian(sort: {fields: surname, order: ASC}) {
         nodes {
           surname
           json {
@@ -166,13 +165,15 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    const authors = result.data.allContentfulAuthor.nodes.map(author => author.json)
+    const authorsEn = result.data.allContentfulAuthor.nodes.map(author => author.json)
+    const authorsRu = result.data.allContentfulAuthorRussian.nodes.map(author => author.json)
+    const authorsBy = result.data.allContentfulAuthorBelarusian.nodes.map(author => author.json)
 
-    authors.forEach(author => {
+    authorsEn.forEach((author, index) => {
       createPage({
-        path: `/${author.surname}`,
+        path: `/authors/${author.surname}`,
         component: require.resolve("./src/templates/author-template.js"),
-        context: { author },
+        context: { en: author, ru: authorsRu[index] || author, by: authorsBy[index] || author },
       })
     })
   })
