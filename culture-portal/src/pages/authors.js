@@ -6,13 +6,14 @@ import AuthorsListWrapper from "../components/AuthorsListWrapper/AuthorsListWrap
 import { AUTHOR_LANGUAGE_QUERY } from "../helpers/Constants"
 
 export default () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const queryAuthor = AUTHOR_LANGUAGE_QUERY[i18n.language];
   const authors = useAuthorsMetadata()[queryAuthor].nodes.map(author => author.json);
 
   return (
     <Layout>
       <div className="authors-page">
+        <h1 className="page-title">{t('menu.authors')}</h1>
         <AuthorsListWrapper authors={authors} />
       </div>
     </Layout>

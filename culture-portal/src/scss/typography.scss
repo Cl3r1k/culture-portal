@@ -75,3 +75,10 @@
   font-weight: 900;
   margin: 20px 0;
 }
+
+.page-title {
+  @include heading-style(60, 100);
+  text-align: center;
+  font-weight: 900;
+  opacity: .5;
+}
