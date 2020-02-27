@@ -26,9 +26,9 @@ export default ({children}) => {
         <Language/>
       </Container>
     </div>
-      <Container maxWidth="lg" className="wrapper">
-        {children}
-      </Container>
+    <Container maxWidth="lg" className="wrapper">
+      {children}
+    </Container>
     </MuiThemeProvider>
   </>
   )

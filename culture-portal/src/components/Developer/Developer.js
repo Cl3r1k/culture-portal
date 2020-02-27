@@ -18,7 +18,7 @@ const Developer = ({
   return (
     <div className="developer-card box-with-bg">
       <h2 className="developer-card__name">{name}</h2>
-      <img src={url} alt={nickName} class="developer-card__photo"></img>
+      <img src={url} alt={nickName} className="developer-card__photo"></img>
       <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="developer-card__name">
         {nickName}
       </a>
