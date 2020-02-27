@@ -11,7 +11,9 @@
     "authors": "Authors",
     "team": "Team",
     "worklog": "Worklog",
-    "styleguide": "Styleguide"
+    "styleguide": "Styleguide",
+    "workflow": "Workflow",
+    "technology": "Project technology"
   },
   "biography-header": "Biography",
   "AUTHOR_WORKS": {
@@ -32,9 +34,9 @@
   "worklog-table-header": "Worklog Table",
   "difficulties": "Main difficulties for the team during implementation",
   "difficulties-list": [
-    "It was a good idea to use 'git flow' initially",
-    "Difficulty #2",
-    "Difficulty #3"
+    "Organization of teamwork: to structure tasks, allocate responsibilities and deadlines, eliminate duplication, minimize conflicts by code. With a competent approach and the use of modern tools / techniques - it is solved quickly and effectively",
+    "Application of CMS Contentful, GraphQL, I18next framework. The study of issues of connection, organization of interaction, including on GatsbyJS",
+    "A factor to consider is the difference in the time zones of developers. Our team is 7 hours. A little complexity, but you need to consider"
   ],
   "self-evaluation": "Self evaluation:",
   "max-points": "Maximum points - 240",

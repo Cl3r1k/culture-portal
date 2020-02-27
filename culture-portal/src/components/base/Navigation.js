@@ -24,7 +24,10 @@ export default () => {
           <Link to="/styleguide/" activeClassName="active-page">{t('menu.styleguide')}</Link>
         </li>
         <li>
-          <Link to="/workflow/" activeClassName="active-page">Workflow</Link>
+          <Link to="/workflow/" activeClassName="active-page">{t('menu.workflow')}</Link>
+        </li>
+        <li>
+          <Link to="/technology/" activeClassName="active-page">{t('menu.technology')}</Link>
         </li>
       </ul>
       <button className="close"></button>
