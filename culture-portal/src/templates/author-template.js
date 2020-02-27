@@ -24,7 +24,7 @@ export default ({ pageContext }) => {
     <Layout>
       <div className="author-page">
         <AuthorCard author={author} />
-        <h3>Биография</h3>
+        <h3>{t('biography-header')}</h3>
         <Timeline lineColor={"#dddddd"}>
           {biography.map(({ date, description }, index) => {
             return (
@@ -43,7 +43,7 @@ export default ({ pageContext }) => {
 
         <Table caption={TABLE_CAPTION}>
           <thead>
-            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true}/>
+            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true} />
           </thead>
           <tbody>
             {works.map((work, index) => {
@@ -54,9 +54,9 @@ export default ({ pageContext }) => {
           </tbody>
         </Table>
 
-        <VideoWindow video={video} about={fullName}/>
+        <VideoWindow video={video} about={fullName} />
         <Map data={author} />
-        <PhotoGallery data={gallery}/>
+        <PhotoGallery data={gallery} />
 
         <div>
           It's okay if not every element (timeline, video, photo gallery, map)

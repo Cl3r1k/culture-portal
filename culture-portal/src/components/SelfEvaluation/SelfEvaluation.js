@@ -1,49 +1,39 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next'
+import List from '../List/List';
 
 const SelfEvaluation = () => {
+  const { t } = useTranslation()
+  const translatedListMinScope = Array(t('min-scope-data.length'))
+  .fill(0)
+  .map((el, i) => t(`min-scope-data.${i}`))
+  const translatedListNormalScope = Array(t('normal-scope-data.length'))
+  .fill(0)
+  .map((el, i) => t(`normal-scope-data.${i}`))
+  const translatedListExtraScope = Array(t('extra-scope-data.length'))
+  .fill(0)
+  .map((el, i) => t(`extra-scope-data.${i}`))
 
   return (
     <>
-      <h3 className="base-title_md">Self evaluation:</h3>
+      <h3 className="base-title_md">{t('self-evaluation')}</h3>
+
       <div className="box-with-bg">
-        <h4>Maximum points - **240**</h4>
 
-        <h4>Min scope - **50**</h4>
-        <ul>
-          <li>**10** Main page + page with a list of authors + author's page (only pages with content without
-            widgets);
-          </li>
-          <li>**10** Page with team members + page with worklog</li>
-          <li>**10** Page with list of authors contains search widget;</li>
-          <li>**20** Portal has two languages;</li>
-        </ul>
+        <h4>{t('max-points')}</h4>
 
-        <h4>Normal scope - **140**</h4>
-        <ul>
-          <li>**20** Portal has page with styleguide;</li>
-          <li>**10** Mobile version is okey</li>
-          <li>**10** Ipad/tablet version is okey</li>
-          <li>**10** Author's page contains timeline;</li>
-          <li>**10** Author's page contains video overlay;</li>
-          <li>**20** Author's page contains photo gallery;</li>
-          <li>**10** Author's page contains map (geowidget);</li>
-          <li>**from 0 to 20** Design (typography, icons, colors, links + buttons + input are styled)</li>
-          <li>**20** Material-ui / bootstrap is used</li>
-          <li>**10** Portal has third language;</li>
-        </ul>
+        <h4>{t('min-scope')}</h4>
 
-        <h4>Extra scope - **70**</h4>
-        <ul>
-          <li>**10** Confidence of the project presentation;</li>
-          <li>**10** Project is made using gatsbyjs;</li>
-          <li>**10** Contentful / netlify cms is used for content management</li>
-          <li>**20** Animations / special effects like paralax</li>
-          <li>**up to 20** Outstanding design;</li>
-          <li>**20** Storybook/styleguidist/other react styleguide tool usage for the page with styles</li>
-        </ul>
+        <List data={translatedListMinScope} />
+
+        <h4>{t('normal-scope')}</h4>
+        <List data={translatedListNormalScope} />
+
+        <h4>{t('extra-scope')}</h4>
+        <List data={translatedListExtraScope} />
       </div>
     </>
-  )
+  );
 }
 
 export default SelfEvaluation
