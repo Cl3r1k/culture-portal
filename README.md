@@ -34,6 +34,7 @@ _[Musmen](https://github.com/musmen)_
 |   2 hours  | implement modal youtube-video window          |
 |  1.5 hours | add portal description and author of the day  |
 |   3 hours  | add information about poets in English        |
+|   3 hours  | add workflow-page with team workflow diagram  |
 
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
@@ -48,10 +49,10 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
 | 6h         | Learning main stack (react+gatsby+contentful) |
-| 1h         | put content in 'contentful'                   |
-| 3h         | implement 'team-page'                         |
-| 3h         | implement 'worklog-page'                      |
-| 12h        | implement translation                         |
+| 2h         | put content in 'contentful'                   |
+| 4h         | implement 'team-page'                         |
+| 4h         | implement 'worklog-page'                      |
+| 15h        | implement translation                         |
 
 ### The main difficulties occurred during teamwork:
 1. ---

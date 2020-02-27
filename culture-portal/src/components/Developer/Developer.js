@@ -1,5 +1,6 @@
 import React from "react"
 import { useTranslation } from 'react-i18next'
+import List from '../List/List'
 
 const Developer = ({
   content: {
@@ -13,7 +14,7 @@ const Developer = ({
     contribution: { contribution },
   },
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div className="developer-card box-with-bg">
@@ -25,7 +26,7 @@ const Developer = ({
       <p className="developer-card__description">{description}</p>
       <div className="developer-card__description">
         {t('contribution')}
-        {contribution}
+        <List data={contribution} />
       </div>
     </div>
   )

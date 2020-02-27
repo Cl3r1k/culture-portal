@@ -34,7 +34,7 @@ export default () => {
           <div className="day-author">
             <Typography variant="h2" component="h2" gutterBottom className="title">{t('day-author')}</Typography>
             <div className="author-info">
-              <Link to={`/${surname}`}>
+              <Link to={`/authors/${surname}`}>
                 <AuthorCard author={dayAuthor} />
               </Link>
             </div>
