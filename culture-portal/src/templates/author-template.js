@@ -62,12 +62,7 @@ export default ({ pageContext }) => {
 
         <VideoWindow video={video} about={fullName} />
         <Map data={author} />
-        <PhotoGallery data={gallery} />
-
-        <div>
-          It's okay if not every element (timeline, video, photo gallery, map)
-          will be present on every page
-        </div>
+        <PhotoGallery data={gallery}/>
       </div>
     </Layout>
     </main>

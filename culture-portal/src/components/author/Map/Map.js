@@ -11,6 +11,7 @@ const Map = ({
   })
   return (
     <div className="map">
+      <h3>Map</h3>
       <Map
         style={MAPBOX_PROPS.mapstyle}
         containerStyle={MAPBOX_PROPS.containerStyle}
