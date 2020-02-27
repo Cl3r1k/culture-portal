@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Header from "../components/base/Header"
 import Layout from "../components/base/Layout"
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 import Table from '../components/Table/Table';
@@ -21,6 +22,10 @@ export default ({ pageContext }) => {
   }
 
   return (
+    <main>
+
+
+    <Header/>
     <Layout>
       <div className="author-page">
         <h1 className="page-title">{fullName}</h1>
@@ -65,5 +70,6 @@ export default ({ pageContext }) => {
         </div>
       </div>
     </Layout>
+    </main>
   )
 }

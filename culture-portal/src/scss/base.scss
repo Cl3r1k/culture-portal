@@ -3,7 +3,7 @@
 .logo {
   display: flex;
   background-image: url("../../static/img/logo.png");
-  width: 200px;
+  width: 110px;
   height: 55px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -13,6 +13,8 @@
 .language {
   padding: 5px 0;
   font-size: 12px;
+  flex-direction: row;
+  display: flex;
 
   span {
     border-left: 1px solid #9f9f9f;
@@ -29,6 +31,18 @@
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 520px){
+    flex-direction: column;
+    display: flex;
+    margin-left: 30px;
+
+    span {
+      border-left: none;
+      border-top: 1px solid #9f9f9f;
+      padding: 10px 2px;
+    }
+  }
 }
 
 .top-header {
@@ -39,6 +53,7 @@
 
 .header-wrapper {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .search-wrap {
@@ -79,3 +94,4 @@
   margin-bottom: 20px;
   overflow: auto;
 }
+
