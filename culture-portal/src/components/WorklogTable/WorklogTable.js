@@ -1,38 +1,22 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import WorkLogCard from '../WorkLogCard/WorkLogCard';
+import React from 'react'
+import WorkLogCard from '../WorkLogCard/WorkLogCard'
+import { useTranslation } from 'react-i18next'
+import { useWorklogMetadata } from '../../hooks/useWorklog.hook'
+import { DEVELOPERS_LANGUAGE_QUERY } from '../../helpers/Constants'
 
 const WorklogTable = () => {
-
-  const data = useStaticQuery(graphql`
-    {
-      allContentfulDeveloper(sort: {fields: name, order: ASC}) {
-        nodes {
-          id
-          nickName
-          githubUrl {
-            githubUrl
-          }
-          workLog {
-            workLog {              
-              spent
-              feature
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const allContentfulDeveloper = data.allContentfulDeveloper.nodes;
+  const { t, i18n } = useTranslation()
+  const queryDevelopersWorklog = DEVELOPERS_LANGUAGE_QUERY[i18n.language]
+  const developersWorklog = useWorklogMetadata()[queryDevelopersWorklog].nodes
 
   return (
-    <div>
-      <h3>Worklog Table</h3>
-
-      {allContentfulDeveloper.map(workLog => (<WorkLogCard key={workLog.id} content={workLog} />))}
-    </div>
-  );
+    <>
+      <h3 className="base-title_md">{t("worklog-table-header")}</h3>
+      <div className="box-with-bg">
+        {developersWorklog.map(workLog => (<WorkLogCard key={workLog.id} content={workLog}/>))}
+      </div>
+    </>
+  )
 }
 
-export default WorklogTable;
+export default WorklogTable

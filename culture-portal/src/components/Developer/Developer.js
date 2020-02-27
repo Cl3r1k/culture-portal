@@ -1,4 +1,6 @@
 import React from "react"
+import { useTranslation } from 'react-i18next'
+import List from '../List/List'
 
 const Developer = ({
   content: {
@@ -12,17 +14,19 @@ const Developer = ({
     contribution: { contribution },
   },
 }) => {
+  const { t } = useTranslation()
+
   return (
-    <div className="developer-card">
-      <h2>{name}</h2>
-      <img src={url} alt={nickName}></img>
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+    <div className="developer-card box-with-bg">
+      <h2 className="developer-card__name">{name}</h2>
+      <img src={url} alt={nickName} className="developer-card__photo"></img>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="developer-card__name">
         {nickName}
       </a>
-      <p>{description}</p>
-      <div>
-        Contribution info:
-        {contribution}
+      <p className="developer-card__description">{description}</p>
+      <div className="developer-card__description">
+        {t('contribution')}
+        <List data={contribution} />
       </div>
     </div>
   )

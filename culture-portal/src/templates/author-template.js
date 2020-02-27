@@ -1,20 +1,36 @@
-import React from "react"
-import AuthorCard from "../components/AuthorCard/AuthorCard"
-import Table from "../components/Table/Table"
-import TableRow from "../components/TableRow/TableRow"
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
-import Map from "../components/author/Map/Map"
-import { AUTHOR_WORKS } from "../helpers/Constants"
-const { TABLE_CAPTION, COLUMN_CAPTIONS } = AUTHOR_WORKS
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import Header from "../components/base/Header"
+import Layout from "../components/base/Layout"
+import AuthorCard from '../components/AuthorCard/AuthorCard';
+import Table from '../components/Table/Table';
+import TableRow from '../components/TableRow/TableRow';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import VideoWindow from '../components/VideoWindow/VideoWindow';
+import Map from "../components/author/Map/Map";
+import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
 
-export default ({ pageContext: { author } }) => {
-  const { id, biography, works } = author
+export default ({ pageContext }) => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const author = pageContext[currentLanguage];
+  const { id, fullName, biography, works, video, gallery } = author;
+  const TABLE_CAPTION = t('AUTHOR_WORKS.TABLE_CAPTION')
+  const COLUMN_CAPTIONS = {
+    FIRST_COLUMN: t('AUTHOR_WORKS.COLUMN_CAPTIONS.FIRST_COLUMN'),
+    SECOND_COLUMN: t('AUTHOR_WORKS.COLUMN_CAPTIONS.SECOND_COLUMN')
+  }
 
   return (
-    <section>
-      <div className="author-page">
-        <AuthorCard author={author} />
+    <main>
 
+
+    <Header/>
+    <Layout>
+      <div className="author-page">
+        <h1 className="page-title">{fullName}</h1>
+        <AuthorCard author={author} />
+        <h3>{t('biography-header')}</h3>
         <Timeline lineColor={"#dddddd"}>
           {biography.map(({ date, description }, index) => {
             return (
@@ -23,7 +39,9 @@ export default ({ pageContext: { author } }) => {
                 dateText={date}
                 style={{ color: "#e86971" }}
               >
-                <p>{description}</p>
+                <p style={{ color: "#ffffff" }}>
+                  {description}
+                </p>
               </TimelineItem>
             )
           })}
@@ -42,19 +60,11 @@ export default ({ pageContext: { author } }) => {
           </tbody>
         </Table>
 
-        <div>
-          Photo gallery with author's picture and pictures of his/her works
-        </div>
-        <div>
-          Youtube video about the author / works / period of time author lived.
-          Video must open in a new overlay (modal)
-        </div>
+        <VideoWindow video={video} about={fullName} />
         <Map data={author} />
-        <div>
-          It's okay if not every element (timeline, video, photo gallery, map)
-          will be present on every page
-        </div>
+        <PhotoGallery data={gallery}/>
       </div>
-    </section>
+    </Layout>
+    </main>
   )
 }

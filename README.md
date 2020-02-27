@@ -9,7 +9,12 @@ _[Deadline](https://github.com/deadline2020)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+|   3 hours  | implement list of authors component           |
+|   3 hours  | implement search component                    |
+|   2 hours  | implement photo-gallery component             |
+|   3 hours  | add information about poets                   |
+|  2.5 hours | add information about poets in Belarusian     |
+|  2.5 hours | change map component                          |
 
 
 _[MariaV](https://github.com/)_
@@ -24,6 +29,15 @@ _[Musmen](https://github.com/musmen)_
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
 |   2 hours  | create poets test data file                   |
+|   3 hours  | implement author-page generation              |
+|   1 hour   | implement list of artist's works              |
+|  0.5 hour  | implement vertical time-line for biography    |
+|   1 hour   | author-page component refactoring             |
+|   2 hours  | implement modal youtube-video window          |
+|  1.5 hours | add portal description and author of the day  |
+|   3 hours  | add information about poets in English        |
+|   3 hours  | add workflow-page with team workflow diagram  |
+|   4 hours  | add technology-page with technology diagram   |
 
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
@@ -38,9 +52,10 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
 | 6h         | Learning main stack (react+gatsby+contentful) |
-| 1h         | put content in 'contentful'                   |
-| 3h         | implement 'team-page'                         |
-| 3h         | implement 'worklog-page'                      |
+| 2h         | put content in 'contentful'                   |
+| 4h         | implement 'team-page'                         |
+| 4h         | implement 'worklog-page'                      |
+| 15h        | implement translation                         |
 
 ### The main difficulties occurred during teamwork:
 1. ---

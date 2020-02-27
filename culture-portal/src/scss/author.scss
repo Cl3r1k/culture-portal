@@ -1,0 +1,110 @@
+%author-page-title {
+  color: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: end;
+  margin: 40px 0 10px 0;
+}
+
+
+.day-author {
+  .title {
+   @extend .base-title;
+  }
+}
+
+.authors-list,
+.authors-list li{
+  display: flex;
+  flex-direction: column;
+}
+
+.author-card {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 520px){
+    flex-direction: column;
+  }
+
+
+  img {
+    width: 300px;
+
+    @media screen and (max-width:  768px) {
+      width: 200px;
+      margin-bottom: 1.5rem;
+    }
+
+  }
+}
+
+.author-info {
+  display: flex;
+  background: #1f1f1f;
+}
+
+.author-card {
+  background: #1f1f1f;
+
+  @media screen and (max-width:  768px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 20px;
+  }
+
+}
+
+.author-card-info {
+  padding: 3rem;
+
+  @media screen and (max-width:  768px) {
+    padding: 0 1rem 0 2rem;
+  }
+  @media screen and (max-width: 520px) {
+    padding: 0 1rem 0 0;
+  }
+}
+
+.authors-list__li  {
+  margin-bottom: 40px;
+}
+
+
+.author-page {
+  caption {
+    @extend %author-page-title;
+  }
+}
+
+.author-video, .author-gallery, .author-page {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    @extend %author-page-title;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+
+  }
+
+  .timeline--wrapper {
+    margin-top: 0;
+  }
+
+}
+
+.photo-gallery {
+  background: #1f1f1f;
+  padding-top: 40px;
+}

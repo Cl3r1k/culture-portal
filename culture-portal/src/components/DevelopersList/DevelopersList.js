@@ -1,40 +1,22 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { useTranslation } from "react-i18next"
+import { useDevelopersMetadata } from '../../hooks/useDevelopers.hook'
 import Developer from "../Developer/Developer"
+import { DEVELOPERS_LANGUAGE_QUERY } from "../../helpers/Constants"
 
-const DevelopersList = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        allContentfulDeveloper {
-          edges {
-            node {
-              id
-              name
-              nickName
-              description {
-                description
-              }
-              avatar {
-                file {
-                  url
-                }
-              }
-              githubUrl {
-                githubUrl
-              }
-              contribution {
-                contribution
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={({ allContentfulDeveloper: { edges } }) =>
-      edges.map(({ node }) => <Developer key={node.id} content={node} />)
-    }
-  />
-)
+const DevelopersList = () => {
+  const { i18n, t } = useTranslation()
+  const queryDevelopers = DEVELOPERS_LANGUAGE_QUERY[i18n.language]
+  const developers = useDevelopersMetadata()[queryDevelopers].nodes
+
+  return (
+    <>
+      <h1 className="page-title">{t('menu.team')}</h1>
+      <div className="developers-list">
+        {developers.map(developer => (<Developer key={developer.id} content={developer} />))}
+      </div>
+    </>
+  )
+}
 
 export default DevelopersList
