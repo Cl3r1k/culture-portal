@@ -13,13 +13,14 @@ export default ({children}) => {
   });
 
   return (
-  <>
     <MuiThemeProvider theme={theme}>
-    <CssBaseline/>
-    <Container maxWidth="lg" className="wrapper">
-      {children}
-    </Container>
+      <CssBaseline/>
+      <Container maxWidth="lg" className="wrapper">
+        {children}
+      </Container>
+      <div className="footer">
+        (c) RSS-React-group-9 2020
+      </div>
     </MuiThemeProvider>
-  </>
   )
 }
