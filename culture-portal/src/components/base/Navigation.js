@@ -30,6 +30,7 @@ export default () => {
           <Link to="/technology/" activeClassName="active-page">{t('menu.technology')}</Link>
         </li>
       </ul>
+      <button className="close"></button>
     </nav>
   )
 }

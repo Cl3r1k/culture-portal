@@ -10,8 +10,11 @@
   }
 }
 
-.home-page-wrapper, .header-wrapper {
+.home-page-wrapper, .header-wrapper, .footer {
   background-image: url("../../static/img/bg.png");
 }
 
 
+.footer {
+  padding: 15px 30px;
+}
