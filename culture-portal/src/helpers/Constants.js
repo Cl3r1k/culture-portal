@@ -26,3 +26,5 @@ export const AUTHOR_LANGUAGE_QUERY = {
 }
 
 export const LANGUAGES = ['en', 'ru', 'by']
+
+export const MOBILE_SCREEN = 414;

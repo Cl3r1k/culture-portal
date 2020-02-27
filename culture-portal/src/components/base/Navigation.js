@@ -2,9 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { useTranslation } from "react-i18next"
 
-export default () => {
+export default ({handleClick}) => {
   const { t } = useTranslation();
-
   return (
     <nav className="navigation">
       <ul>
@@ -30,7 +29,7 @@ export default () => {
           <Link to="/technology/" activeClassName="active-page">{t('menu.technology')}</Link>
         </li>
       </ul>
-      <button className="close"></button>
+      <button className="close" onClick={() => handleClick(false)}></button>
     </nav>
   )
 }
