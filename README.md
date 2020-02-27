@@ -35,6 +35,7 @@ _[Musmen](https://github.com/musmen)_
 |  1.5 hours | add portal description and author of the day  |
 |   3 hours  | add information about poets in English        |
 |   3 hours  | add workflow-page with team workflow diagram  |
+|   4 hours  | add technology-page with technology diagram   |
 
 
 _[niki_night](https://github.com/ViktoriyaVorozhun)_
