@@ -27,6 +27,7 @@ export default () => {
           <Link to="/workflow/" activeClassName="active-page">Workflow</Link>
         </li>
       </ul>
+      <button className="close"></button>
     </nav>
   )
 }

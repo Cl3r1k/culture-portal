@@ -1,7 +1,4 @@
 .navigation {
-  @media screen and (max-width: 520px){
-    display: none;
-  }
 
   ul {
     display: flex;
@@ -27,4 +24,54 @@
 
     }
   }
+
+  @media screen and (max-width: 520px){
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: #e0e0e0;
+
+
+    ul {
+      flex-direction: column;
+
+
+      li a {
+        color: #1f1f1f;
+      }
+    }
+  }
+
+  .close {
+    display: none;
+    @media screen and (max-width: 520px) {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      background-image: url('../../static/img/close.png');
+    }
+  }
 }
+
+.menu {
+  display: none;
+  @media screen and (max-width: 520px){
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-image: url('../../static/img/menu.png');
+  }
+}
+
