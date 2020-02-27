@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 import { useTranslation } from 'react-i18next'
+import List from '../List/List'
 
 const Difficulties = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const difficultiesList = Array(t('difficulties-list.length'))
+  .fill(0)
+  .map((el, i) => t(`difficulties-list.${i}`))
 
   return (
     <div>
       <h3 className="base-title_md">{t('difficulties')}</h3>
-      <ol className="box-with-bg">
-        <li>It was a good idea to use "git flow" initially</li>
-        <li>Difficulty #2</li>
-        <li>Difficulty #3</li>
-      </ol>
+      <List data={difficultiesList} isOrderedList />
     </div>
   )
 }
