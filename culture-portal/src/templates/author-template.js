@@ -24,7 +24,7 @@ export default ({ pageContext }) => {
     <Layout>
       <div className="author-page">
         <AuthorCard author={author} />
-
+        <h3>Биография</h3>
         <Timeline lineColor={"#dddddd"}>
           {biography.map(({ date, description }, index) => {
             return (
