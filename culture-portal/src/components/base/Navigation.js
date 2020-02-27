@@ -23,6 +23,9 @@ export default () => {
         <li>
           <Link to="/styleguide/" activeClassName="active-page">{t('menu.styleguide')}</Link>
         </li>
+        <li>
+          <Link to="/workflow/" activeClassName="active-page">Workflow</Link>
+        </li>
       </ul>
     </nav>
   )
