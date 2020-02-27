@@ -15,7 +15,6 @@ const Developer = ({
   },
 }) => {
   const { t } = useTranslation()
-  console.log('contribution', contribution)
 
   return (
     <div className="developer-card">

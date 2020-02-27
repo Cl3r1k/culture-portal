@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { useTranslation } from 'react-i18next'
-import List from '../List/List';
+import List from '../List/List'
 
 const SelfEvaluation = () => {
   const { t } = useTranslation()
@@ -33,7 +33,7 @@ const SelfEvaluation = () => {
         <List data={translatedListExtraScope} />
       </div>
     </>
-  );
+  )
 }
 
 export default SelfEvaluation
