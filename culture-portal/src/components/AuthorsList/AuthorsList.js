@@ -9,7 +9,7 @@ const AuthorsList = (props) => {
       {filteredArrOfAuthors.map(card => {
         return (
           <li className="authors-list__li" key={card.id}>
-            <Link to={`/${card.surname}/`}>
+            <Link to={`/authors/${card.surname}/`}>
               <AuthorInfo card={card} />
             </Link>
           </li>

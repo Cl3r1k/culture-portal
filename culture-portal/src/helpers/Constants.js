@@ -24,3 +24,5 @@ export const AUTHOR_LANGUAGE_QUERY = {
   ru: 'allContentfulAuthorRussian',
   by: 'allContentfulAuthorBelarusian',
 }
+
+export const LANGUAGES = ['en', 'ru', 'by']

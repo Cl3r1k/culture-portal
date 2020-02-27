@@ -1,40 +1,33 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react'
 import AuthorsList from "../AuthorsList/AuthorsList"
 import Search from "../Search/Search"
 
-class AuthorsListWrapper extends Component {
-  state = {
-    filteredArrOfAuthors: this.props.authors,
-  }
+const AuthorsListWrapper = (props) => {
+  const [filteredArrOfAuthors, setSearch] = useState(props.authors)
 
-  startSearch = ({ target: { value }}) => {
-    const { authors } = this.props;
-    const searchWord = value.toLowerCase();
-    let resultArr = authors;
+  useEffect(() => {
+    setSearch(props.authors)
+  }, [props.authors])
+
+  const startSearch = ({ target: { value }}) => {
+    let resultArr = props.authors
     if (value) {
-      resultArr = authors.filter(card => {
-        const fullName = card.fullName.toLowerCase();
-        const birthLocation = card.birth.location.name.toLowerCase();
-        return (fullName.includes(searchWord) || birthLocation.includes(searchWord));
-      });
+      const searchWord = value.toLowerCase()
+      resultArr = props.authors.filter(card => {
+        const fullName = card.fullName.toLowerCase()
+        const birthLocation = card.birth.location.name.toLowerCase()
+        return (fullName.includes(searchWord) || birthLocation.includes(searchWord))
+      })
     }
-    this.setState({ filteredArrOfAuthors: resultArr });
+    setSearch(resultArr)
   }
 
-  render() {
-    const { filteredArrOfAuthors } = this.state;
-    return (
-      <>
-        <Search
-          startSearch={this.startSearch}
-        />
-        <AuthorsList
-          filteredArrOfAuthors={filteredArrOfAuthors}
-        />
-      </>
-    );
-  }
-
+  return (
+    <>
+      <Search startSearch={startSearch} />
+      <AuthorsList filteredArrOfAuthors={filteredArrOfAuthors} />
+    </>
+  )
 }
 
-export default AuthorsListWrapper;
+export default AuthorsListWrapper

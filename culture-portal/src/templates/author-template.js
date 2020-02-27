@@ -9,8 +9,10 @@ import VideoWindow from '../components/VideoWindow/VideoWindow';
 import Map from "../components/author/Map/Map";
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
 
-export default ({ pageContext: { author } }) => {
-  const { t } = useTranslation();
+export default ({ pageContext }) => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const author = pageContext[currentLanguage];
   const { id, fullName, biography, works, video, gallery } = author;
   const TABLE_CAPTION = t('AUTHOR_WORKS.TABLE_CAPTION')
   const COLUMN_CAPTIONS = {
@@ -23,7 +25,7 @@ export default ({ pageContext: { author } }) => {
       <div className="author-page">
         <h1 className="page-title">{fullName}</h1>
         <AuthorCard author={author} />
-        <h3>Биография</h3>
+        <h3>{t('biography-header')}</h3>
         <Timeline lineColor={"#dddddd"}>
           {biography.map(({ date, description }, index) => {
             return (
@@ -42,7 +44,7 @@ export default ({ pageContext: { author } }) => {
 
         <Table caption={TABLE_CAPTION}>
           <thead>
-            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true}/>
+            <TableRow data={COLUMN_CAPTIONS} isHeadRow={true} />
           </thead>
           <tbody>
             {works.map((work, index) => {
@@ -53,9 +55,9 @@ export default ({ pageContext: { author } }) => {
           </tbody>
         </Table>
 
-        <VideoWindow video={video} about={fullName}/>
+        <VideoWindow video={video} about={fullName} />
         <Map data={author} />
-        <PhotoGallery data={gallery}/>
+        <PhotoGallery data={gallery} />
 
         <div>
           It's okay if not every element (timeline, video, photo gallery, map)

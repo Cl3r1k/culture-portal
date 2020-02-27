@@ -119,7 +119,7 @@ Todo:
       ☐ **10** Main page + page with a list of authors + author's page (only pages with content without widgets);
       ☐ **10** Page with team members + page with worklog
       ☐ **10** Page with list of authors contains search widget;
-      ☐ **20** Portal has two languages; @started(20-02-20 14:57)  <========================================================= CURRENT TASK
+      ✔ **20** Portal has two languages; @started(20-02-20 14:57) @done(20-02-27 12:16) @lasted(6d21h19m10s)
       
       
     Normal scope - **140**:
@@ -132,12 +132,12 @@ Todo:
       ☐ **10** Author's page contains map (geowidget);
       ☐ **from 0 to 20** Design (typography, icons, colors, links + buttons + input are styled)
       ☐ **20** Material-ui / bootstrap is used
-      ☐ **10** Portal has third language;
+      ✔ **10** Portal has third language; @started(20-02-20 14:57) @done(20-02-27 12:16) @lasted(6d21h19m10s)
       
     Extra scope - **70**:
       ☐ **10** Confidence of the project presentation;
       ✔ **10** Project is made using gatsbyjs; @done(20-02-18 14:07)
-      ✔ **10** Contentful / netlify cms is used for content management @done(20-02-20 14:57)
+      ✔ **10** Contentful / netlify cms is used for content management @done(20-02-20 14:57)  <========================================================= CURRENT TASK
       ☐ **20** Animations / special effects like paralax 
       ☐ **up to 20** Outstanding design;
       ☐ **20** Storybook/styleguidist/other react styleguide tool usage for the page with styles
