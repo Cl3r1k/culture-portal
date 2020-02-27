@@ -1,8 +1,10 @@
-import React from "react"
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
 const AuthorCard = ({ author }) => {
-  const { fullName, photo, description, birth, death } = author
+  const {
+    fullName, photo, description, birth, death,
+  } = author;
   return (
     <div className="author-card">
       <div>
@@ -13,12 +15,15 @@ const AuthorCard = ({ author }) => {
           {fullName}
         </Typography>
         <Typography variant="h6" component="p" gutterBottom>
-          {birth.date} - {death.date}
+          {birth.date}
+          {' '}
+          -
+          {death.date}
         </Typography>
         <p>{description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AuthorCard
+export default AuthorCard;

@@ -1,32 +1,32 @@
-import React from "react"
-import Layout from "../components/base/Layout"
-import Types from "../components/common/Typography"
-import Box from "../components/common/Box"
-import SimpleTable from "../components/common/Table"
-import Colors from "../components/common/Colors"
-import Header from "../components/base/Header"
-import { useTranslation } from "react-i18next"
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import Layout from '../components/base/Layout';
+import Types from '../components/common/Typography';
+import Box from '../components/common/Box';
+import SimpleTable from '../components/common/Table';
+import Colors from '../components/common/Colors';
+import Header from '../components/base/Header';
 
 export default () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <main className="app">
-      <Header/>
+      <Header />
       <Layout>
-        <h1 className="page-title">{t("menu.styleguide")}</h1>
+        <h1 className="page-title">{t('menu.styleguide')}</h1>
         <p className="base-title">Logo</p>
         <div className="box-with-bg">
-          <a href="/" className="logo"></a>
+          <a href="/" className="logo" />
         </div>
-        <Colors/>
-        <Types/>
+        <Colors />
+        <Types />
         <p className="base-title">Table</p>
         <div className="box-with-bg">
           <Box>
-            <SimpleTable/>
+            <SimpleTable />
           </Box>
         </div>
       </Layout>
     </main>
-  )
-}
+  );
+};

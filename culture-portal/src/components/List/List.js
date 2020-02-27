@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const List = ({ data, isOrderedList = false }) => {
+const List = ({ data, id, isOrderedList = false }) => (isOrderedList ? (
+  <ol className="box-with-bg">
+    {data.map((item) => (
+      <li key={id}>{item}</li>
+    ))}
+  </ol>
+) : (
+  <ul className="box-with-bg">
+    {data.map((item) => (
+      <li key={id}>{item}</li>
+    ))}
+  </ul>
+));
 
-  return (
-    isOrderedList ?
-      (<ol className="box-with-bg">
-        {data.map((item, i) => <li key={`id-${i}`}>{item}</li>)}
-      </ol>)
-      :
-      (<ul className="box-with-bg">
-        {data.map((item, i) => <li key={`id-${i}`}>{item}</li>)}
-      </ul>)
-  )
-}
-
-export default List
+export default List;

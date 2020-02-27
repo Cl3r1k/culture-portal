@@ -1,4 +1,5 @@
-/* eslint-disable */ 
+/* eslint-disable */
+
 // ***********************
 // * Page of an author with
 
@@ -70,7 +71,8 @@ exports.authors = [
       },
       {
         date: "In the summer of 1917",
-        description: "The rank of second lieutenant was sent to the Romanian front",
+        description:
+          "The rank of second lieutenant was sent to the Romanian front",
       },
       {
         date: "In 1918",
@@ -102,7 +104,8 @@ exports.authors = [
     works: [
       {
         date: "In 1906",
-        description: "The first publication is the poem «The Land of the Beloved»",
+        description:
+          "The first publication is the poem «The Land of the Beloved»",
       },
       {
         date: "In 1908",
@@ -169,7 +172,7 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: '71kJB1j7Xwg',
+      youtubeId: "71kJB1j7Xwg",
       startTime: 34,
     },
   },
@@ -178,109 +181,116 @@ exports.authors = [
     name: "Gregory",
     surname: "Borodulin",
     fullName: "Gregory Borodulin",
-    photo:
-    {
-      link: "https://www.belnovosti.by/sites/default/files/article/13-12-2016/233.jpg",
+    photo: {
+      link:
+        "https://www.belnovosti.by/sites/default/files/article/13-12-2016/233.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
-    description: "Soviet and Belarusian poet, essayist, translator. National poet of Belarus",
-    birth:
-    {
+    description:
+      "Soviet and Belarusian poet, essayist, translator. National poet of Belarus",
+    birth: {
       date: "February 24, 1935",
-      description: "Born on the Veresovka farm, the official name of the farm was Gorodok-2. Now it is the northwestern outskirts of the village of Tikhonyat of the Sorochinsky Village Council",
-      location:
-      {
+      description:
+        "Born on the Veresovka farm, the official name of the farm was Gorodok-2. Now it is the northwestern outskirts of the village of Tikhonyat of the Sorochinsky Village Council",
+      location: {
         name: "Tikhonyat village of Sorochinsky village council",
         lat: 55.18132851883945,
         lng: 28.655963807829608,
         zoom: 6,
       },
     },
-    death:
-    {
+    death: {
       date: "March 2, 2014",
-      description: "He was buried next to his mother at the Ushachsky cemetery, as the poet wanted during his lifetime",
-      location:
-      {
+      description:
+        "He was buried next to his mother at the Ushachsky cemetery, as the poet wanted during his lifetime",
+      location: {
         name: "Ushachy, Vitebsk region",
         lat: 55.17926469992477,
         lng: 28.614041841542075,
         zoom: 6,
       },
     },
-    biography:
-      [
-        {
-          date: "In 1954",
-          description: "Graduated from Ushachies High School",
-        },
-        {
-          date: "In 1959",
-          description: "Graduate of the Faculty of Philology of BSU",
-        },
-        {
-          date: "After 1959",
-          description: "He worked as an editor at the publishing houses «Belarus» and «Fiction», as well as in the newspaper «Soviet Belarus» and the magazines «Berezka» and «Flame»",
-        },
-        {
-          date: "In 1984",
-          description: "As part of the state delegation of the Byelorussian SSR took part in the 39th session of the UN General Assembly",
-        },
-        {
-          date: "In 1992",
-          description: "He became the last Belarusian awarded the title of national poet",
-        },
-      ],
-    works:
-      [
-        {
-          date: "In 1953",
-          description: "The first poems in the newspaper «Red shift»",
-        },
-        {
-          date: "In 1959",
-          description: "A collection of poetry «A Month Over the Steppe»",
-        },
-        {
-          date: "After 1959",
-          description: "In total, about 70 collections of poetry were published (including collections of satire and humor, as well as poems for children)",
-        },
-        {
-          date: "In 1984, 1996 - 2002",
-          description: "Books of poet's selected verses have been published twice",
-        },
-        {
-          date: "In 1986 - 2006",
-          description: "Poetry translations into Belarusian «Words about Igor’s Regiment», books by Federico Garcia Lorca («Blue Ringing of Grenada»), «Rubai» by Omar Khayyam, works by Shakespeare, Byron, Yesenin and others",
-        },
-        {
-          date: "In 2006",
-          description: "A book of selected poems by Borodulin «Runes of Perunova»",
-        },
-      ],
-    gallery:
-      [
-        {
-          link: "https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich7.jpg",
-          path: "локальный путь...",
-        },
-        {
-          link: "https://www.peoples.ru/art/literature/prose/national/ryhor_ryhor_borodulin/PymqONvZHNPC2.jpeg",
-          path: "локальный путь...",
-        },
-        {
-          link: "https://belaruspartisan.by/upload/iblock/cbf/cbf72f8cb3d0396c3450aba9ed315f32.jpg",
-          path: "локальный путь...",
-        },
-        {
-          link: "https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich10.jpg",
-          path: "локальный путь...",
-        },
-        {
-          link: "https://s12.stc.all.kpcdn.net/share/i/12/6500474/inx960x640.jpg",
-          path: "локальный путь...",
-        },
-      ],
+    biography: [
+      {
+        date: "In 1954",
+        description: "Graduated from Ushachies High School",
+      },
+      {
+        date: "In 1959",
+        description: "Graduate of the Faculty of Philology of BSU",
+      },
+      {
+        date: "After 1959",
+        description:
+          "He worked as an editor at the publishing houses «Belarus» and «Fiction», as well as in the newspaper «Soviet Belarus» and the magazines «Berezka» and «Flame»",
+      },
+      {
+        date: "In 1984",
+        description:
+          "As part of the state delegation of the Byelorussian SSR took part in the 39th session of the UN General Assembly",
+      },
+      {
+        date: "In 1992",
+        description:
+          "He became the last Belarusian awarded the title of national poet",
+      },
+    ],
+    works: [
+      {
+        date: "In 1953",
+        description: "The first poems in the newspaper «Red shift»",
+      },
+      {
+        date: "In 1959",
+        description: "A collection of poetry «A Month Over the Steppe»",
+      },
+      {
+        date: "After 1959",
+        description:
+          "In total, about 70 collections of poetry were published (including collections of satire and humor, as well as poems for children)",
+      },
+      {
+        date: "In 1984, 1996 - 2002",
+        description:
+          "Books of poet's selected verses have been published twice",
+      },
+      {
+        date: "In 1986 - 2006",
+        description:
+          "Poetry translations into Belarusian «Words about Igor’s Regiment», books by Federico Garcia Lorca («Blue Ringing of Grenada»), «Rubai» by Omar Khayyam, works by Shakespeare, Byron, Yesenin and others",
+      },
+      {
+        date: "In 2006",
+        description:
+          "A book of selected poems by Borodulin «Runes of Perunova»",
+      },
+    ],
+    gallery: [
+      {
+        link:
+          "https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich7.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link:
+          "https://www.peoples.ru/art/literature/prose/national/ryhor_ryhor_borodulin/PymqONvZHNPC2.jpeg",
+        path: "локальный путь...",
+      },
+      {
+        link:
+          "https://belaruspartisan.by/upload/iblock/cbf/cbf72f8cb3d0396c3450aba9ed315f32.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link:
+          "https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich10.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link: "https://s12.stc.all.kpcdn.net/share/i/12/6500474/inx960x640.jpg",
+        path: "локальный путь...",
+      },
+    ],
     video: {
       youtubeId: "WzJFsmUvTzI",
       startTime: 3,
@@ -447,7 +457,8 @@ exports.authors = [
     surname: "Kupala",
     fullName: "Yanka Kupala",
     photo: {
-      link: "https://24smi.org/public/media/resize/800x-/celebrity/2018/12/06/ofy1rxpievtc-ianka-kupala.jpg",
+      link:
+        "https://24smi.org/public/media/resize/800x-/celebrity/2018/12/06/ofy1rxpievtc-ianka-kupala.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
     description:
@@ -465,7 +476,8 @@ exports.authors = [
     },
     death: {
       date: "June 28, 1942",
-      description: "He was buried in Minsk at the Military Cemetery, near the grave of his mother.",
+      description:
+        "He was buried in Minsk at the Military Cemetery, near the grave of his mother.",
       location: {
         name: "Minsk",
         lat: 53.9081569,
@@ -560,8 +572,7 @@ exports.authors = [
     ],
     gallery: [
       {
-        link:
-          "https://a.d-cd.net/ef43feas-960.jpg",
+        link: "https://a.d-cd.net/ef43feas-960.jpg",
         path: "локальный путь...",
       },
       {
@@ -594,7 +605,8 @@ exports.authors = [
     surname: "Brovka",
     fullName: "Petrus Brovka",
     photo: {
-      link: "https://www.sb.by/upload/medialibrary/07e/07e2b058e731e2c0dd0181cfd61ddff7.jpg",
+      link:
+        "https://www.sb.by/upload/medialibrary/07e/07e2b058e731e2c0dd0181cfd61ddff7.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
     description:
@@ -623,8 +635,7 @@ exports.authors = [
     biography: [
       {
         date: "In 1918—1924",
-        description:
-          "Worked as a clerk and bookkeeper",
+        description: "Worked as a clerk and bookkeeper",
       },
       {
         date: "In 1925—1927",
@@ -638,8 +649,7 @@ exports.authors = [
       },
       {
         date: "In 1928—1931",
-        description:
-          "Studied at the pedagogical faculty of BSU",
+        description: "Studied at the pedagogical faculty of BSU",
       },
       {
         date: "In 1928",
@@ -648,7 +658,8 @@ exports.authors = [
       },
       {
         date: "In 1941—1942",
-        description: "He served in the Red Army, worked in the front and partisan press",
+        description:
+          "He served in the Red Army, worked in the front and partisan press",
       },
       {
         date: "In 1943—1945",
@@ -660,7 +671,8 @@ exports.authors = [
       },
       {
         date: "In 1948—1967",
-        description: "Chairman of the Board of the Union of Writers of the BSSR",
+        description:
+          "Chairman of the Board of the Union of Writers of the BSSR",
       },
       {
         date: "In 1967—1980",
@@ -745,11 +757,13 @@ exports.authors = [
         path: "локальный путь...",
       },
       {
-        link: "https://www.sb.by/upload/iblock/062/06205d4575f30d422bec59a54d993de5.jpg",
+        link:
+          "https://www.sb.by/upload/iblock/062/06205d4575f30d422bec59a54d993de5.jpg",
         path: "локальный путь...",
       },
       {
-        link: "https://places.by/wp-content/uploads/2017/08/Pyatrus-Brouka-600x428.jpg",
+        link:
+          "https://places.by/wp-content/uploads/2017/08/Pyatrus-Brouka-600x428.jpg",
         path: "локальный путь...",
       },
       {
@@ -772,8 +786,7 @@ exports.authors = [
       link: "https://coollib.net/sites/default/files/Arkadiy-Kuleshov.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
-    description:
-      "Belorussian Soviet poet and translator, screenwriter",
+    description: "Belorussian Soviet poet and translator, screenwriter",
     birth: {
       date: "January 24, 1914",
       description:
@@ -798,8 +811,7 @@ exports.authors = [
     biography: [
       {
         date: "In 1918—1924",
-        description:
-          "Worked as a clerk and bookkeeper",
+        description: "Worked as a clerk and bookkeeper",
       },
       {
         date: "In 1928",
@@ -823,7 +835,8 @@ exports.authors = [
       },
       {
         date: "In 1945—1946",
-        description: "He worked as the editor-in-chief of the newspaper «Literature and mastastva»",
+        description:
+          "He worked as the editor-in-chief of the newspaper «Literature and mastastva»",
       },
       {
         date: "In 1946—1958",
@@ -902,8 +915,7 @@ exports.authors = [
     ],
     gallery: [
       {
-        link:
-          "https://forum.vgd.ru/file.php?fid=403275&key=2069824477",
+        link: "https://forum.vgd.ru/file.php?fid=403275&key=2069824477",
         path: "локальный путь...",
       },
       {
@@ -916,7 +928,8 @@ exports.authors = [
         path: "локальный путь...",
       },
       {
-        link: "https://www.places.by/wp-content/uploads/2017/08/kuliaszou135.jpg",
+        link:
+          "https://www.places.by/wp-content/uploads/2017/08/kuliaszou135.jpg",
         path: "локальный путь...",
       },
       {
@@ -939,16 +952,15 @@ exports.authors = [
       link: "https://gazetaby.com/uploads/2017/09/tank_18-1.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
-    description:
-      "Belorussian Soviet poet, translator, statesman",
+    description: "Belorussian Soviet poet, translator, statesman",
     birth: {
       date: "September 4, 1912",
       description:
         "Born in the village of Pilkovschina (now Myadel district of the Minsk region, Belarus)",
       location: {
         name: "Myadel",
-        lat: 54.875560,
-        lng: 26.938610,
+        lat: 54.87556,
+        lng: 26.93861,
         zoom: 6,
       },
     },
@@ -995,11 +1007,13 @@ exports.authors = [
       },
       {
         date: "April 27, 1932",
-        description: "For the underground communist activities of the Tank, Lukishka is arrested and sent to Vilna prison. A month later he goes free",
+        description:
+          "For the underground communist activities of the Tank, Lukishka is arrested and sent to Vilna prison. A month later he goes free",
       },
       {
         date: "Autumn 1932",
-        description: "Crosses the Soviet-Polish border and heads to Minsk. Here he is arrested and kept in custody for two weeks. They conduct interrogations, conduct “friendly conversations”. After this, the young poet is deported back",
+        description:
+          "Crosses the Soviet-Polish border and heads to Minsk. Here he is arrested and kept in custody for two weeks. They conduct interrogations, conduct “friendly conversations”. After this, the young poet is deported back",
       },
       {
         date: "In 1945-1948",
@@ -1011,11 +1025,13 @@ exports.authors = [
       },
       {
         date: "In 1966-1971",
-        description: "First Secretary of the Board in the Union of Writers of the BSSR",
+        description:
+          "First Secretary of the Board in the Union of Writers of the BSSR",
       },
       {
         date: "In 1971-1990",
-        description: "Chairman of the Board in the Union of Writers of the BSSR",
+        description:
+          "Chairman of the Board in the Union of Writers of the BSSR",
       },
     ],
     works: [
@@ -1082,17 +1098,16 @@ exports.authors = [
     ],
     gallery: [
       {
-        link:
-          "https://gazetaby.com/uploads/2017/09/tank_18-2.jpg",
+        link: "https://gazetaby.com/uploads/2017/09/tank_18-2.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link: "https://gazetaby.com/uploads/2017/09/tank_18-7.jpg",
         path: "локальный путь...",
       },
       {
         link:
-          "https://gazetaby.com/uploads/2017/09/tank_18-7.jpg",
-        path: "локальный путь...",
-      },
-      {
-        link: "https://www.sb.by/upload/medialibrary/42d/42d5281c105c7d8664131043599ee11f.jpg",
+          "https://www.sb.by/upload/medialibrary/42d/42d5281c105c7d8664131043599ee11f.jpg",
         path: "локальный путь...",
       },
       {

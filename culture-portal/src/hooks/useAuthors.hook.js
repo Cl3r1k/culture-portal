@@ -1,9 +1,9 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby';
 
-export const useAuthorsMetadata = () => {
+const useAuthorsMetadata = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulAuthor(sort: {fields: surname, order: ASC}) {
+      allContentfulAuthor(sort: { fields: surname, order: ASC }) {
         nodes {
           surname
           json {
@@ -55,7 +55,7 @@ export const useAuthorsMetadata = () => {
           }
         }
       }
-      allContentfulAuthorRussian(sort: {fields: surname, order: ASC}) {
+      allContentfulAuthorRussian(sort: { fields: surname, order: ASC }) {
         nodes {
           surname
           json {
@@ -107,7 +107,7 @@ export const useAuthorsMetadata = () => {
           }
         }
       }
-      allContentfulAuthorBelarusian(sort: {fields: surname, order: ASC}) {
+      allContentfulAuthorBelarusian(sort: { fields: surname, order: ASC }) {
         nodes {
           surname
           json {
@@ -160,7 +160,9 @@ export const useAuthorsMetadata = () => {
         }
       }
     }
-  `)
+  `);
 
-  return data
-}
+  return data;
+};
+
+export default useAuthorsMetadata;
