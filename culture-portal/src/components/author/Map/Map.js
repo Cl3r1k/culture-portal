@@ -1,3 +1,4 @@
+
 import React, { useState } from "react"
 import ReactMapGL from "react-map-gl"
 import { MAPBOX_PROPS } from "../../../helpers/Constants"
@@ -24,7 +25,7 @@ const Map = ({ data: { birth, death } }) => {
         <Pin content={death} />
       </ReactMapGL>
     </div>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;

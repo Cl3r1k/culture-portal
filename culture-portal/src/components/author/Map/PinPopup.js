@@ -8,6 +8,7 @@ const PinPopup = ({
     location: { lat, lng },
   },
   handleClick,
+
 }) => {
   return (
     <Popup latitude={lat} longitude={lng}>
@@ -27,4 +28,4 @@ const PinPopup = ({
   )
 }
 
-export default PinPopup
+export default PinPopup;

@@ -19,4 +19,4 @@ const PinMarker = ({ content: { location: { lat, lng }, }, handleClick, }) => {
   )
 }
 
-export default PinMarker
+export default PinMarker;

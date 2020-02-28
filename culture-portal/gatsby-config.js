@@ -7,7 +7,7 @@
 if (process.env.NODE_ENV === "development") {
   require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
-  });
+  })
 }
 
 module.exports = {
@@ -24,9 +24,10 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-styleguide`,
       options: {
         basePath: `/`,
-      }
-    }, {
+      },
+    },
+    {
       resolve: `gatsby-plugin-sass`,
     },
-  ]
+  ],
 }

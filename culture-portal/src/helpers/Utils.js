@@ -11,7 +11,7 @@ const getDayAuthor = (authors) => {
   const day = now.getDate();
 
   // Algorithm for LeapYear detection from https://habr.com/ru/post/164521/
-  const isLeapYear = ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0);
+  const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 
   // Calculation algorithm for dayNumberInYear from http://deep125.narod.ru/astra_calc/p3.js
   if (month > FEBRUARY_NUMBER) {

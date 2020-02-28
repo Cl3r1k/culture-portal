@@ -1,4 +1,5 @@
-/* eslint-disable */ 
+/* eslint-disable */
+
 // ***********************
 // * Page of an author with
 
@@ -169,120 +170,126 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: '71kJB1j7Xwg',
+      youtubeId: "71kJB1j7Xwg",
       startTime: 34,
     },
   },
   {
     id: 1,
-    name: 'Gregory',
-    surname: 'Borodulin',
-    fullName: 'Григорий Иванович Бородулин',
-    photo:
-    {
-      link: 'https://www.belnovosti.by/sites/default/files/article/13-12-2016/233.jpg',
-      path: '*локальный путь на проекте - если будет надо*',
+    name: "Gregory",
+    surname: "Borodulin",
+    fullName: "Григорий Иванович Бородулин",
+    photo: {
+      link:
+        "https://www.belnovosti.by/sites/default/files/article/13-12-2016/233.jpg",
+      path: "*локальный путь на проекте - если будет надо*",
     },
-    description: 'Советский и белорусский поэт, эссеист, переводчик. Народный поэт Беларуси',
-    birth:
-    {
-      date: '24 февраля 1935 года',
-      description: 'Родился на хуторе Вересовка, официальное название хутора было «Городок-2». Теперь это северо-западная окраина дер.Тихоняты Сорочинского сельсовета',
-      location:
-      {
-        name: 'дер.Тихоняты Сорочинского сельсовета',
+    description:
+      "Советский и белорусский поэт, эссеист, переводчик. Народный поэт Беларуси",
+    birth: {
+      date: "24 февраля 1935 года",
+      description:
+        "Родился на хуторе Вересовка, официальное название хутора было «Городок-2». Теперь это северо-западная окраина дер.Тихоняты Сорочинского сельсовета",
+      location: {
+        name: "дер.Тихоняты Сорочинского сельсовета",
         lat: 55.18132851883945,
         lng: 28.655963807829608,
         zoom: 6,
       },
     },
-    death:
-    {
-      date: '2 марта 2014 года',
-      description: 'Похоронен рядом с матерью на Ушачском кладбище, как и хотел поэт при жизни',
-      location:
-      {
-        name: 'г.Ушачи, Витебская область',
+    death: {
+      date: "2 марта 2014 года",
+      description:
+        "Похоронен рядом с матерью на Ушачском кладбище, как и хотел поэт при жизни",
+      location: {
+        name: "г.Ушачи, Витебская область",
         lat: 55.17926469992477,
         lng: 28.614041841542075,
         zoom: 6,
       },
     },
-    biography:
-      [
-        {
-          date: '1954 год',
-          description: 'Окончил Ушачскую среднюю школу',
-        },
-        {
-          date: '1959 год',
-          description: 'Выпускник филологического факультета БГУ',
-        },
-        {
-          date: 'После 1959 года',
-          description: 'Работал редактором в издательствах «Беларусь» и «Художественная литература», а также в газете «Советская Белоруссия» и журналах «Берёзка» и «Пламя»',
-        },
-        {
-          date: '1984 год',
-          description: 'В составе государственной делегации Белорусской ССР принимал участие в 39 сессии Генеральной ассамблеи ООН',
-        },
-        {
-          date: '1992 год',
-          description: 'Стал последним белорусом, удостоившимся звания народного поэта',
-        },
-      ],
-    works:
-      [
-        {
-          date: '1953 год',
-          description: 'Первые стихи в газете «Красная смена»',
-        },
-        {
-          date: '1959 год',
-          description: 'Сборник поэзии «Месяц над степью»',
-        },
-        {
-          date: 'После 1959 года',
-          description: 'Всего вышло около 70 сборников поэзии (в т.ч. сборники сатиры и юмора, а также стихи для детей)',
-        },
-        {
-          date: '1984, 1996 - 2002 годы',
-          description: 'Дважды издавались книги избранных стихов поэта',
-        },
-        {
-          date: '1986 - 2006 годы',
-          description: 'Стихотворные переводы на белорусский язык «Слова о полку Игореве», книг Федерико Гарсиа Лорки («Голубой звон Гренады»), «Рубаи» Омара Хайяма, произведений Шекспира, Байрона, Есенина и др.',
-        },
-        {
-          date: '2006 год',
-          description: 'Вышла книга избранных стихотворений Бородулина «Руны Перуновы»',
-        },
-      ],
-    gallery:
-      [
-        {
-          link: 'https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich7.jpg',
-          path: 'локальный путь...',
-        },
-        {
-          link: 'https://www.peoples.ru/art/literature/prose/national/ryhor_ryhor_borodulin/PymqONvZHNPC2.jpeg',
-          path: 'локальный путь...',
-        },
-        {
-          link: 'https://belaruspartisan.by/upload/iblock/cbf/cbf72f8cb3d0396c3450aba9ed315f32.jpg',
-          path: 'локальный путь...',
-        },
-        {
-          link: 'https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich10.jpg',
-          path: 'локальный путь...',
-        },
-        {
-          link: 'https://s12.stc.all.kpcdn.net/share/i/12/6500474/inx960x640.jpg',
-          path: 'локальный путь...',
-        },
-      ],
+    biography: [
+      {
+        date: "1954 год",
+        description: "Окончил Ушачскую среднюю школу",
+      },
+      {
+        date: "1959 год",
+        description: "Выпускник филологического факультета БГУ",
+      },
+      {
+        date: "После 1959 года",
+        description:
+          "Работал редактором в издательствах «Беларусь» и «Художественная литература», а также в газете «Советская Белоруссия» и журналах «Берёзка» и «Пламя»",
+      },
+      {
+        date: "1984 год",
+        description:
+          "В составе государственной делегации Белорусской ССР принимал участие в 39 сессии Генеральной ассамблеи ООН",
+      },
+      {
+        date: "1992 год",
+        description:
+          "Стал последним белорусом, удостоившимся звания народного поэта",
+      },
+    ],
+    works: [
+      {
+        date: "1953 год",
+        description: "Первые стихи в газете «Красная смена»",
+      },
+      {
+        date: "1959 год",
+        description: "Сборник поэзии «Месяц над степью»",
+      },
+      {
+        date: "После 1959 года",
+        description:
+          "Всего вышло около 70 сборников поэзии (в т.ч. сборники сатиры и юмора, а также стихи для детей)",
+      },
+      {
+        date: "1984, 1996 - 2002 годы",
+        description: "Дважды издавались книги избранных стихов поэта",
+      },
+      {
+        date: "1986 - 2006 годы",
+        description:
+          "Стихотворные переводы на белорусский язык «Слова о полку Игореве», книг Федерико Гарсиа Лорки («Голубой звон Гренады»), «Рубаи» Омара Хайяма, произведений Шекспира, Байрона, Есенина и др.",
+      },
+      {
+        date: "2006 год",
+        description:
+          "Вышла книга избранных стихотворений Бородулина «Руны Перуновы»",
+      },
+    ],
+    gallery: [
+      {
+        link:
+          "https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich7.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link:
+          "https://www.peoples.ru/art/literature/prose/national/ryhor_ryhor_borodulin/PymqONvZHNPC2.jpeg",
+        path: "локальный путь...",
+      },
+      {
+        link:
+          "https://belaruspartisan.by/upload/iblock/cbf/cbf72f8cb3d0396c3450aba9ed315f32.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link:
+          "https://persons-info.com/userfiles/image/persons/0-10000/5000-6000/5243/BORODULIN_Rygor_Ivanovich10.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link: "https://s12.stc.all.kpcdn.net/share/i/12/6500474/inx960x640.jpg",
+        path: "локальный путь...",
+      },
+    ],
     video: {
-      youtubeId: 'WzJFsmUvTzI',
+      youtubeId: "WzJFsmUvTzI",
       startTime: 3,
     },
   },
@@ -437,7 +444,7 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: 'wpC11RbWnPE',
+      youtubeId: "wpC11RbWnPE",
       startTime: 3,
     },
   },
@@ -447,7 +454,8 @@ exports.authors = [
     surname: "Kupala",
     fullName: "Янка Купала",
     photo: {
-      link: "https://24smi.org/public/media/resize/800x-/celebrity/2018/12/06/ofy1rxpievtc-ianka-kupala.jpg",
+      link:
+        "https://24smi.org/public/media/resize/800x-/celebrity/2018/12/06/ofy1rxpievtc-ianka-kupala.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
     description:
@@ -465,7 +473,8 @@ exports.authors = [
     },
     death: {
       date: "28 июня 1942 года",
-      description: "Похоронен в Минске на Военном кладбище, рядом с могилой матери",
+      description:
+        "Похоронен в Минске на Военном кладбище, рядом с могилой матери",
       location: {
         name: "г.Минск",
         lat: 53.9081569,
@@ -481,8 +490,7 @@ exports.authors = [
       },
       {
         date: "1908-1909 годы",
-        description:
-          "Работал в редакции первой белорусской газеты «Наша Ніва»",
+        description: "Работал в редакции первой белорусской газеты «Наша Ніва»",
       },
       {
         date: "1909-1913 годы",
@@ -560,8 +568,7 @@ exports.authors = [
     ],
     gallery: [
       {
-        link:
-          "https://a.d-cd.net/ef43feas-960.jpg",
+        link: "https://a.d-cd.net/ef43feas-960.jpg",
         path: "локальный путь...",
       },
       {
@@ -584,7 +591,7 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: 'aJbr-p5cYuI',
+      youtubeId: "aJbr-p5cYuI",
       startTime: 21,
     },
   },
@@ -594,7 +601,8 @@ exports.authors = [
     surname: "Brovka",
     fullName: "Пётр Устинович Бровка",
     photo: {
-      link: "https://www.sb.by/upload/medialibrary/07e/07e2b058e731e2c0dd0181cfd61ddff7.jpg",
+      link:
+        "https://www.sb.by/upload/medialibrary/07e/07e2b058e731e2c0dd0181cfd61ddff7.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
     description:
@@ -623,13 +631,11 @@ exports.authors = [
     biography: [
       {
         date: "1918—1924 годы",
-        description:
-          "Работал переписчиком, делопроизводителем и счетоводом.",
+        description: "Работал переписчиком, делопроизводителем и счетоводом.",
       },
       {
         date: "1925—1927 годы",
-        description:
-          "Был завотделом Окружкома комсомола в Полоцке",
+        description: "Был завотделом Окружкома комсомола в Полоцке",
       },
       {
         date: "1927—1928 годы",
@@ -638,8 +644,7 @@ exports.authors = [
       },
       {
         date: "1928—1931 годы",
-        description:
-          "Учился на педагогическом факультете БГУ",
+        description: "Учился на педагогическом факультете БГУ",
       },
       {
         date: "1928 год",
@@ -648,7 +653,8 @@ exports.authors = [
       },
       {
         date: "1941—1942 годы",
-        description: "Служил в РККА, работал во фронтовой и партизанской печати",
+        description:
+          "Служил в РККА, работал во фронтовой и партизанской печати",
       },
       {
         date: "1943—1945 годы",
@@ -745,11 +751,13 @@ exports.authors = [
         path: "локальный путь...",
       },
       {
-        link: "https://www.sb.by/upload/iblock/062/06205d4575f30d422bec59a54d993de5.jpg",
+        link:
+          "https://www.sb.by/upload/iblock/062/06205d4575f30d422bec59a54d993de5.jpg",
         path: "локальный путь...",
       },
       {
-        link: "https://places.by/wp-content/uploads/2017/08/Pyatrus-Brouka-600x428.jpg",
+        link:
+          "https://places.by/wp-content/uploads/2017/08/Pyatrus-Brouka-600x428.jpg",
         path: "локальный путь...",
       },
       {
@@ -759,7 +767,7 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: '7xHGTr4EbK4',
+      youtubeId: "7xHGTr4EbK4",
       startTime: 28,
     },
   },
@@ -772,8 +780,7 @@ exports.authors = [
       link: "https://coollib.net/sites/default/files/Arkadiy-Kuleshov.jpg",
       path: "*локальный путь на проекте - если будет надо*",
     },
-    description:
-      "Белорусский советский поэт и переводчик, сценарист",
+    description: "Белорусский советский поэт и переводчик, сценарист",
     birth: {
       date: "24 января 1914 года",
       description:
@@ -798,8 +805,7 @@ exports.authors = [
     biography: [
       {
         date: "1918—1924 годы",
-        description:
-          "Работал переписчиком, делопроизводителем и счетоводом.",
+        description: "Работал переписчиком, делопроизводителем и счетоводом.",
       },
       {
         date: "1928 год",
@@ -818,12 +824,12 @@ exports.authors = [
       },
       {
         date: "1943-1944 годы",
-        description:
-          "Служил в Белорусском штабе партизанского движения",
+        description: "Служил в Белорусском штабе партизанского движения",
       },
       {
         date: "1945—1946 годы",
-        description: "Работал главным редактором газеты «Літаратура і мастацтва»",
+        description:
+          "Работал главным редактором газеты «Літаратура і мастацтва»",
       },
       {
         date: "1946—1958 годы",
@@ -902,8 +908,7 @@ exports.authors = [
     ],
     gallery: [
       {
-        link:
-          "https://forum.vgd.ru/file.php?fid=403275&key=2069824477",
+        link: "https://forum.vgd.ru/file.php?fid=403275&key=2069824477",
         path: "локальный путь...",
       },
       {
@@ -916,7 +921,8 @@ exports.authors = [
         path: "локальный путь...",
       },
       {
-        link: "https://www.places.by/wp-content/uploads/2017/08/kuliaszou135.jpg",
+        link:
+          "https://www.places.by/wp-content/uploads/2017/08/kuliaszou135.jpg",
         path: "локальный путь...",
       },
       {
@@ -926,7 +932,7 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: '-htllJNjITg',
+      youtubeId: "-htllJNjITg",
       startTime: 1,
     },
   },
@@ -947,8 +953,8 @@ exports.authors = [
         "Родился в селе Пильковщина (ныне Мядельский район Минской области, Беларусь)",
       location: {
         name: "г.Мядель",
-        lat: 54.875560,
-        lng: 26.938610,
+        lat: 54.87556,
+        lng: 26.93861,
         zoom: 6,
       },
     },
@@ -980,8 +986,7 @@ exports.authors = [
       },
       {
         date: "1928 год",
-        description:
-          "Перевелся в белорусскую гимназию в Радашковичах",
+        description: "Перевелся в белорусскую гимназию в Радашковичах",
       },
       {
         date: "1929 год",
@@ -995,11 +1000,13 @@ exports.authors = [
       },
       {
         date: "27 апреля 1932 года",
-        description: "За подпольную коммунистическую деятельность Танка арестовывают и садят в виленскую тюрьму Лукишки. Через месяц он выходит на свободу",
+        description:
+          "За подпольную коммунистическую деятельность Танка арестовывают и садят в виленскую тюрьму Лукишки. Через месяц он выходит на свободу",
       },
       {
         date: "Осенью 1932 года",
-        description: "Переходит советско-польскую границу и направляется в Минск. Здесь его арестовывают и две недели держат под стражей. Ведут допросы, проводят “дружеские беседы”. После этого молодого поэта депортируют назад",
+        description:
+          "Переходит советско-польскую границу и направляется в Минск. Здесь его арестовывают и две недели держат под стражей. Ведут допросы, проводят “дружеские беседы”. После этого молодого поэта депортируют назад",
       },
       {
         date: "1945-1948 годы",
@@ -1082,17 +1089,16 @@ exports.authors = [
     ],
     gallery: [
       {
-        link:
-          "https://gazetaby.com/uploads/2017/09/tank_18-2.jpg",
+        link: "https://gazetaby.com/uploads/2017/09/tank_18-2.jpg",
+        path: "локальный путь...",
+      },
+      {
+        link: "https://gazetaby.com/uploads/2017/09/tank_18-7.jpg",
         path: "локальный путь...",
       },
       {
         link:
-          "https://gazetaby.com/uploads/2017/09/tank_18-7.jpg",
-        path: "локальный путь...",
-      },
-      {
-        link: "https://www.sb.by/upload/medialibrary/42d/42d5281c105c7d8664131043599ee11f.jpg",
+          "https://www.sb.by/upload/medialibrary/42d/42d5281c105c7d8664131043599ee11f.jpg",
         path: "локальный путь...",
       },
       {
@@ -1106,7 +1112,7 @@ exports.authors = [
       },
     ],
     video: {
-      youtubeId: '40Uhtifsk7s',
+      youtubeId: "40Uhtifsk7s",
       startTime: 21,
     },
   },

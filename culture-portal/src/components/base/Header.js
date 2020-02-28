@@ -1,20 +1,65 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import Navigation from "./Navigation"
-import Language from "../common/Language"
-import "../../scss/styles.scss"
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Navigation from './Navigation';
+import Language from '../common/Language';
+import '../../scss/styles.scss';
+import { MOBILE_SCREEN } from '../../helpers/Constants';
 
-export default ({ children }) => {
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isNavigationOpened: false,
+      isDesktopView: true,
+    };
+  }
 
-  return (
-    <header className="header-wrapper">
-      <Container className="top-header" maxWidth="lg">
-        <button className="menu"></button>
-        <a href="/" className="logo"></a>
-        <Navigation/>
-        <Language/>
-      </Container>
-      {children}
-    </header>
-  )
+  componentDidMount() {
+    if (window.innerWidth >= MOBILE_SCREEN) {
+      this.setState({
+        isDesktopView: true,
+      });
+    } else {
+      this.setState({
+        isDesktopView: false,
+      });
+    }
+  }
+
+  handleClick = (isShow) => {
+    if (isShow) {
+      this.setState({
+        isNavigationOpened: true,
+      });
+    } else {
+      this.setState({
+        isNavigationOpened: false,
+      });
+    }
+  }
+
+  render() {
+    const { children } = this.props;
+    const { isNavigationOpened, isDesktopView } = this.state;
+    return (
+      <header className="header-wrapper">
+        <Container className="top-header" maxWidth="lg">
+          <button
+            role="button"
+            type="button"
+            className="menu"
+            onClick={() => this.handleClick(true)}
+          />
+          <a href="/" className="logo" />
+          {(isDesktopView || isNavigationOpened) && (
+            <Navigation handleClick={this.handleClick} />
+          )}
+          <Language />
+        </Container>
+        {children}
+      </header>
+    );
+  }
 }
+
+export default Header;
