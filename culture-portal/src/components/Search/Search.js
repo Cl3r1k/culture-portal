@@ -1,5 +1,5 @@
-import React from "react"
-import { useTranslation } from "react-i18next"
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Search = (props) => {
   const { startSearch } = props;
@@ -15,6 +15,6 @@ const Search = (props) => {
       />
     </div>
   );
-}
+};
 
 export default Search;

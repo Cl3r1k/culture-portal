@@ -1,36 +1,54 @@
-import React from "react"
-import { Link } from "gatsby"
-import { useTranslation } from "react-i18next"
+import React from 'react';
+import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 
-export default () => {
+export default ({ handleClick }) => {
   const { t } = useTranslation();
-
   return (
     <nav className="navigation">
       <ul>
         <li>
-          <Link to="/" activeClassName="active-page">{t('menu.home')}</Link>
+          <Link to="/" activeClassName="active-page">
+            {t('menu.home')}
+          </Link>
         </li>
         <li>
-          <Link to="/authors/" partiallyActive={true} activeClassName="active-page">{t('menu.authors')}</Link>
+          <Link to="/authors/" partiallyActive activeClassName="active-page">
+            {t('menu.authors')}
+          </Link>
         </li>
         <li>
-          <Link to="/team/" activeClassName="active-page">{t('menu.team')}</Link>
+          <Link to="/team/" activeClassName="active-page">
+            {t('menu.team')}
+          </Link>
         </li>
         <li>
-          <Link to="/worklog/" activeClassName="active-page">{t('menu.worklog')}</Link>
+          <Link to="/worklog/" activeClassName="active-page">
+            {t('menu.worklog')}
+          </Link>
         </li>
         <li>
-          <Link to="/styleguide/" activeClassName="active-page">{t('menu.styleguide')}</Link>
+          <Link to="/styleguide/" activeClassName="active-page">
+            {t('menu.styleguide')}
+          </Link>
         </li>
         <li>
-          <Link to="/workflow/" activeClassName="active-page">{t('menu.workflow')}</Link>
+          <Link to="/workflow/" activeClassName="active-page">
+            {t('menu.workflow')}
+          </Link>
         </li>
         <li>
-          <Link to="/technology/" activeClassName="active-page">{t('menu.technology')}</Link>
+          <Link to="/technology/" activeClassName="active-page">
+            {t('menu.technology')}
+          </Link>
         </li>
       </ul>
-      <button className="close"></button>
+      <button
+        className="close"
+        onClick={() => handleClick(false)}
+        rel="button"
+        type="button"
+      />
     </nav>
-  )
-}
+  );
+};

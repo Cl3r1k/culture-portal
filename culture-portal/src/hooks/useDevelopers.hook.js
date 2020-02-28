@@ -1,73 +1,75 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby';
 
-export const useDevelopersMetadata = () => {
+const useDevelopersMetadata = () => {
   const data = useStaticQuery(graphql`
-  {
-    allContentfulDeveloper(sort: {fields: name, order: ASC}) {
-      nodes {
-        id
-        name
-        nickName
-        description {
-          description
-        }
-        avatar {
-          file {
-            url
+    {
+      allContentfulDeveloper(sort: { fields: name, order: ASC }) {
+        nodes {
+          id
+          name
+          nickName
+          description {
+            description
+          }
+          avatar {
+            file {
+              url
+            }
+          }
+          githubUrl {
+            githubUrl
+          }
+          contribution {
+            contribution
           }
         }
-        githubUrl {
-          githubUrl
+      }
+      allContentfulDeveloperRussian(sort: { fields: name, order: ASC }) {
+        nodes {
+          id
+          name
+          nickName
+          description {
+            description
+          }
+          avatar {
+            file {
+              url
+            }
+          }
+          githubUrl {
+            githubUrl
+          }
+          contribution {
+            contribution
+          }
         }
-        contribution {
-          contribution
+      }
+      allContentfulDeveloperBelarusian(sort: { fields: name, order: ASC }) {
+        nodes {
+          id
+          name
+          nickName
+          description {
+            description
+          }
+          avatar {
+            file {
+              url
+            }
+          }
+          githubUrl {
+            githubUrl
+          }
+          contribution {
+            contribution
+          }
         }
       }
     }
-    allContentfulDeveloperRussian(sort: {fields: name, order: ASC}) {
-      nodes {
-        id
-        name
-        nickName
-        description {
-          description
-        }
-        avatar {
-          file {
-            url
-          }
-        }
-        githubUrl {
-          githubUrl
-        }
-        contribution {
-          contribution
-        }
-      }
-    }
-    allContentfulDeveloperBelarusian(sort: {fields: name, order: ASC}) {
-      nodes {
-        id
-        name
-        nickName
-        description {
-          description
-        }
-        avatar {
-          file {
-            url
-          }
-        }
-        githubUrl {
-          githubUrl
-        }
-        contribution {
-          contribution
-        }
-      }
-    }
-  }
-`)
+  `);
 
-  return data
-}
+  return data;
+};
+
+export default useDevelopersMetadata;
