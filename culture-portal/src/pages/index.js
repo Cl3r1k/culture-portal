@@ -8,6 +8,8 @@ import Header from '../components/base/Header';
 import useAuthorsMetadata from '../hooks/useAuthors.hook';
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 import getDayAuthor from '../helpers/Utils';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 import {
   DESCRIPTION_LIST_INDICES,
   AUTHOR_LANGUAGE_QUERY,
@@ -23,6 +25,12 @@ export default () => {
   const dayAuthor = getDayAuthor(authors);
   const { surname } = dayAuthor;
 
+  const bounceAnimation = keyframes`${fadeIn
+    }`;
+  const BouncyDiv = styled.div`
+  animation: 1.5s ${bounceAnimation};
+`;
+
   return (
     <main className="app">
       <Header className="home-page">
@@ -35,6 +43,7 @@ export default () => {
       <Layout>
         <div>
           <div className="day-author">
+            <BouncyDiv>
             <Typography
               variant="h2"
               component="h2"
@@ -43,11 +52,13 @@ export default () => {
             >
               {t('day-author')}
             </Typography>
-            <div className="author-info">
-              <Link to={`/authors/${surname}`}>
-                <AuthorCard author={dayAuthor} />
-              </Link>
-            </div>
+
+              <div className="author-info">
+                <Link to={`/authors/${surname}`}>
+                  <AuthorCard author={dayAuthor} />
+                </Link>
+              </div>
+            </BouncyDiv>
           </div>
         </div>
       </Layout>

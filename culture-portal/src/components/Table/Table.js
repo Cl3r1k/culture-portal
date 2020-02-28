@@ -9,7 +9,7 @@ const Table = ({ caption, children }) => {
   };
 
   return (
-    <table border={borderSize} style={styleObj}>
+    <table border={borderSize} style={styleObj} className="table">
       <caption>{caption}</caption>
       {children}
     </table>
