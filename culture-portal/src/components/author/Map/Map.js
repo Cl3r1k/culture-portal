@@ -8,9 +8,9 @@ const Map = ({ data: { birth, death } }) => {
   const [viewport, setViewport] = useState({
     width: MAPBOX_PROPS.viewport.width,
     height: MAPBOX_PROPS.viewport.height,
-    zoom: MAPBOX_PROPS.viewport.zoom,
-    latitude: MAPBOX_PROPS.viewport.latitude,
-    longitude: MAPBOX_PROPS.viewport.longitude,
+    zoom: birth.location.zoom,
+    latitude: birth.location.lat,
+    longitude: birth.location.lng,
     mapboxApiAccessToken: MAPBOX_PROPS.viewport.mapboxApiAccessToken,
   });
 

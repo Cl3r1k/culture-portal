@@ -33,7 +33,7 @@ exports.authors = [
         name: 'г.Стоўбцы',
         lat: 53.48214217471295,
         lng: 26.7375761625284,
-        zoom: 6,
+        zoom: 7,
       },
     },
     death: {
@@ -43,7 +43,7 @@ exports.authors = [
         name: 'г.Мінск',
         lat: 53.89037067092244,
         lng: 27.560757392280152,
-        zoom: 6,
+        zoom: 7,
       },
     },
     biography: [
@@ -191,7 +191,7 @@ exports.authors = [
         name: 'в.Тіхоняты Сарочынскаго сельсавета',
         lat: 55.18132851883945,
         lng: 28.655963807829608,
-        zoom: 6,
+        zoom: 9,
       },
     },
     death: {
@@ -202,7 +202,7 @@ exports.authors = [
         name: 'г.Ушачі, Віцебская вобласць',
         lat: 55.17926469992477,
         lng: 28.614041841542075,
-        zoom: 6,
+        zoom: 9,
       },
     },
     biography: [
@@ -309,7 +309,7 @@ exports.authors = [
         name: 'г.Талін, Эстонія',
         lat: 59.43532480195083,
         lng: 24.748016649737906,
-        zoom: 6,
+        zoom: 3,
       },
     },
     death: {
@@ -319,7 +319,7 @@ exports.authors = [
         name: 'г.Мінск',
         lat: 53.89037067092244,
         lng: 27.560757392280152,
-        zoom: 6,
+        zoom: 3,
       },
     },
     biography: [
@@ -464,7 +464,7 @@ exports.authors = [
         name: 'г.Маладзечна',
         lat: 54.313611,
         lng: 26.851667,
-        zoom: 6,
+        zoom: 7,
       },
     },
     death: {
@@ -475,7 +475,7 @@ exports.authors = [
         name: 'г.Мінск',
         lat: 53.9081569,
         lng: 27.5845868,
-        zoom: 6,
+        zoom: 7,
       },
     },
     biography: [
@@ -950,7 +950,7 @@ exports.authors = [
         name: 'г.Мядзел',
         lat: 54.87556,
         lng: 26.93861,
-        zoom: 6,
+        zoom: 9,
       },
     },
     death: {
@@ -960,7 +960,7 @@ exports.authors = [
         name: 'в.Навікі',
         lat: 54.787294,
         lng: 27.096704,
-        zoom: 6,
+        zoom: 9,
       },
     },
     biography: [
