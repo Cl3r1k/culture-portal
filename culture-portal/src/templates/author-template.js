@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +12,7 @@ import VideoWindow from '../components/VideoWindow/VideoWindow';
 import Map from '../components/author/Map/Map';
 import PhotoGallery from '../components/PhotoGallery/PhotoGallery';
 
-export default ({ pageContext }) => {
+const AuthorTemplate = ({ pageContext }) => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
   const author = pageContext[currentLanguage];
@@ -67,3 +68,9 @@ export default ({ pageContext }) => {
     </main>
   );
 };
+
+AuthorTemplate.propTypes = {
+  pageContext: PropTypes.objectOf(PropTypes.object).isRequired,
+};
+
+export default AuthorTemplate;

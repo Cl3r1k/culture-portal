@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Popup } from 'react-mapbox-gl';
 
 const PinPopup = ({
@@ -24,5 +25,17 @@ const PinPopup = ({
     <p>{description}</p>
   </Popup>
 );
+
+PinPopup.propTypes = {
+  content: PropTypes.shape({
+    date: PropTypes.string,
+    description: PropTypes.string,
+    location: PropTypes.shape({
+      lat: PropTypes.number,
+      lng: PropTypes.number,
+    }),
+  }).isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default PinPopup;

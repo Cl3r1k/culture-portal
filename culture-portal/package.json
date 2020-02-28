@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint --debug src/",
     "eslint": "eslint \"./src/**/*.js\" --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -26,7 +27,6 @@
     "i18next": "^19.3.0",
     "mapbox-gl": "^1.7.0",
     "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-i18next": "^11.3.3",
@@ -43,7 +43,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2"
   },
   "repository": {
     "type": "git",

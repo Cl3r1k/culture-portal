@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import List from '../List/List';
 
@@ -36,6 +37,18 @@ const Developer = ({
       </div>
     </div>
   );
+};
+
+Developer.propTypes = {
+  content: PropTypes.shape({
+    name: PropTypes.string,
+    nickName: PropTypes.string,
+    id: PropTypes.string,
+    description: PropTypes.objectOf(PropTypes.string),
+    avatar: PropTypes.objectOf(PropTypes.object),
+    githubUrl: PropTypes.objectOf(PropTypes.string),
+    contribution: PropTypes.objectOf(PropTypes.array),
+  }).isRequired,
 };
 
 export default Developer;

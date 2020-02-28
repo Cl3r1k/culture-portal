@@ -54,17 +54,18 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 | 4h         | implement 'team-page'                         |
 | 4h         | implement 'worklog-page'                      |
 | 15h        | implement translation                         |
+| 2h         | refactor                                      |
 
 ### The main difficulties occurred during teamwork:
-1. ---
-2. ---
-3. ---
+1. Organization of teamwork: to structure tasks, allocate responsibilities and deadlines, eliminate duplication, minimize conflicts by code. With a competent approach and the use of modern tools / techniques - it is solved quickly and effectively
+2. Application of CMS Contentful, GraphQL, I18next framework. The study of issues of connection, organization of interaction, including on GatsbyJS
+3. A factor to consider is the difference in the time zones of developers. Our team is 7 hours. A little complexity, but you need to consider
 
 
 ### Self evaluation:
 
 1. #### Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md
-2. #### 15.02.2020 / 29.02.2020
+2. #### 28.02.2020 / 29.02.2020
 
 ### Total
 
@@ -76,56 +77,56 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 
 ##### Main page with: ( 3 / 3 )
 
-- [ ] portal's description
-- [ ] 'author of the day' block
-- [ ] developer team description
+- [x] portal's description
+- [x] 'author of the day' block
+- [x] developer team description
 
 ##### Page of an author with: ( 11 / 11 )
 
-- [ ] Page with a list of authors on the given topic with search widget
-- [ ] search should be on the current language with ability to search by name, city/place of birth
-- [ ] 5-7 authors are enough to complete the task successfully.
-- [ ] Author's name
-- [ ] Years of life
-- [ ] his/her picture
-- [ ] biography in the form of timeline (example here)
-- [ ] list of artist's works with the date of creation
-- [ ] photo gallery with author's picture and pictures of his/her works
-- [ ] youtube video about the author / works / period of time author lived. Video must open in a new overlay (modal)
-- [ ] place of author's major activity on a map: google / openstreetmap (leaflet) / yandex
+- [x] Page with a list of authors on the given topic with search widget
+- [x] search should be on the current language with ability to search by name, city/place of birth
+- [x] 5-7 authors are enough to complete the task successfully.
+- [x] Author's name
+- [x] Years of life
+- [x] his/her picture
+- [x] biography in the form of timeline (example here)
+- [x] list of artist's works with the date of creation
+- [x] photo gallery with author's picture and pictures of his/her works
+- [x] youtube video about the author / works / period of time author lived. Video must open in a new overlay (modal)
+- [x] place of author's major activity on a map: google / openstreetmap (leaflet) / yandex
 
 ##### General: ( 5 / 5 )
 
-- [ ] Web portal must be deployed on Github Pages / netlify / google firebase / etc
-- [ ] Web portal has to be in 3 languages - by, ru, en. Content may vary for each version but interface elements have to be translated.
-- [ ] Portal should be relatively correctly displayed on tablets and mobile phones.
-- [ ] You should develop portal using libraries of visual components such as material-ui or bootstrap.
-- [ ] You should use Reactjs or use gatsbyjs to get additional points.
+- [x] Web portal must be deployed on Github Pages / netlify / google firebase / etc
+- [x] Web portal has to be in 3 languages - by, ru, en. Content may vary for each version but interface elements have to be translated.
+- [x] Portal should be relatively correctly displayed on tablets and mobile phones.
+- [x] You should develop portal using libraries of visual components such as material-ui or bootstrap.
+- [x] You should use Reactjs or use gatsbyjs to get additional points.
 
 #### Evaluation: ( 40 + 130 + 70 = 240 )
 
 ##### Min scope: - ( +40 )
 
-- [ ] 10 Main page + page with a list of authors + author's page (only html);
-- [ ] 10 Page with list of authors contains search widget;
-- [ ] 20 Portal has two languages;
+- [x] 10 Main page + page with a list of authors + author's page (only html);
+- [x] 10 Page with list of authors contains search widget;
+- [x] 20 Portal has two languages;
 
 ##### Normal scope: - ( +130 )
 
-- [ ] 10 Author's page contains timeline;
-- [ ] 10 Author's page contains video overlay;
-- [ ] 20 Author's page contains photo gallery;
-- [ ] 10 Author's page contains map (geowidget);
-- [ ] from 10 to 40 Project is made using react (max 40 - if all widgets are done in React);
-- [ ] from 0 to 20 Design;
-- [ ] 20 material-ui / bootstrap is used
+- [x] 10 Author's page contains timeline;
+- [x] 10 Author's page contains video overlay;
+- [x] 20 Author's page contains photo gallery;
+- [x] 10 Author's page contains map (geowidget);
+- [x] from 10 to 40 Project is made using react (max 40 - if all widgets are done in React);
+- [x] from 0 to 20 Design;
+- [x] 20 material-ui / bootstrap is used
 
 ##### Extra scope: - ( +70 )
 
-- [ ] 10 Confidence of the project presentation;
-- [ ] 30 Project is made using gatsbyjs;
-- [ ] 20 contentful / netlify cms is used for content management
-- [ ] 10 Portal has third language;
+- [x] 10 Confidence of the project presentation;
+- [x] 30 Project is made using gatsbyjs;
+- [x] 20 contentful / netlify cms is used for content management
+- [x] 10 Portal has third language;
 
 ##### Fines: ( 0 )
 

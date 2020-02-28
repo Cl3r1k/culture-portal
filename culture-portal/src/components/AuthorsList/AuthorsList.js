@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import AuthorInfo from '../AuthorInfo/AuthorInfo';
 
@@ -15,6 +16,10 @@ const AuthorsList = (props) => {
       ))}
     </ul>
   );
+};
+
+AuthorsList.propTypes = {
+  filteredArrOfAuthors: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default AuthorsList;

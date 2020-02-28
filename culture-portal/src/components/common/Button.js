@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import UIButton from '@material-ui/core/Button';
 
 const Button = (props) => {
@@ -9,4 +10,10 @@ const Button = (props) => {
     </UIButton>
   );
 };
+
+Button.propTypes = {
+  color: PropTypes.string.isRequired,
+  buttonName: PropTypes.string.isRequired,
+};
+
 export default Button;

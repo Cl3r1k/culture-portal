@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 
-export default ({ handleClick }) => {
+const Navigation = ({ handleClick }) => {
   const { t } = useTranslation();
   return (
     <nav className="navigation">
@@ -52,3 +53,9 @@ export default ({ handleClick }) => {
     </nav>
   );
 };
+
+Navigation.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
+
+export default Navigation;
