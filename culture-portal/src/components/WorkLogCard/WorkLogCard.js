@@ -1,6 +1,4 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Table from '../Table/Table';
 import TableRow from '../TableRow/TableRow';
@@ -29,22 +27,13 @@ const WorkLogCard = ({
           <TableRow data={COLUMN_CAPTIONS} isHeadRow />
         </thead>
         <tbody>
-          {workLog.map((work, idx) => (
-            <TableRow data={work} isHeadRow={false} key={`${id}-${idx}`} />
+          {workLog.map((work) => (
+            <TableRow data={work} isHeadRow={false} key={`${id}`} />
           ))}
         </tbody>
       </Table>
     </div>
   );
-};
-
-WorkLogCard.propTypes = {
-  content: PropTypes.shape({
-    nickName: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    githubUrl: PropTypes.objectOf(PropTypes.string).isRequired,
-    workLog: PropTypes.objectOf(PropTypes.array).isRequired,
-  }).isRequired,
 };
 
 export default WorkLogCard;

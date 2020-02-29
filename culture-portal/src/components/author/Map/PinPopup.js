@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Popup } from 'react-mapbox-gl';
+import React from "react"
+import { Popup } from "react-map-gl"
 
 const PinPopup = ({
   content: {
@@ -28,17 +27,5 @@ const PinPopup = ({
     </Popup>
   )
 }
-
-PinPopup.propTypes = {
-  content: PropTypes.shape({
-    date: PropTypes.string,
-    description: PropTypes.string,
-    location: PropTypes.shape({
-      lat: PropTypes.number,
-      lng: PropTypes.number,
-    }),
-  }).isRequired,
-  handleClick: PropTypes.func.isRequired,
-};
 
 export default PinPopup;
