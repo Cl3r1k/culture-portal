@@ -21,7 +21,7 @@ const WorkLogCard = ({
 
   return (
     <div className="worklog-card">
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="nickname">
         {nickName}
       </a>
       <Table>

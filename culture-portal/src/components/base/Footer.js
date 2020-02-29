@@ -2,5 +2,7 @@ import React from 'react';
 import '../../scss/styles.scss';
 
 export default () => (
-  <footer className="footer">@RS-School-react-group-9</footer>
+  <div className="footer">
+    <p className="footer-content"> (c) RSS-React-group-9 2020</p>
+  </div>
 );

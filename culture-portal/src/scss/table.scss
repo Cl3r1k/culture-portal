@@ -8,3 +8,47 @@
     padding: 5px 10px;
   }
 }
+
+.table, .table thead, .table tbody {
+  min-width: 200px;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #424242;
+  border-radius: 4px;
+
+  tr {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: middle;
+
+  }
+
+  th, td {
+    text-align: left;
+    flex-direction: row-reverse;
+    display: table-cell;
+    padding: 12px;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-bottom: 1px solid rgba(81, 81, 81, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5rem;
+    word-break: break-word;
+  }
+
+  th {
+    font-weight: bold;
+  }
+}
+
+.nickname {
+  font-size: 20px;
+  line-height: 40px;
+}
