@@ -14,7 +14,7 @@ export default function Types() {
   return (
     <>
       <p className="base-title">Typography</p>
-      <div className="box-with-bg">
+      <div className="box-with-bg box-break">
         <Typography variant="h1" component="h2" gutterBottom>
           h1. Heading
         </Typography>

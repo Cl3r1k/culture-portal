@@ -8,6 +8,12 @@
   text-align: end;
   margin: 40px 0 10px 0;
   font-family: "Pattaya";
+
+  @media screen and (max-width: 520px) {
+    font-size: 2rem;
+  }
+
+
 }
 
 
@@ -93,6 +99,9 @@
 
   h3 {
     @extend %author-page-title;
+    @media screen and (max-width: 520px) {
+      font-size: 2rem;
+    }
   }
 
   button {
