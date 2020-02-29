@@ -3,13 +3,13 @@ import '../i18n/i18n';
 import { useTranslation } from 'react-i18next';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'gatsby';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 import Layout from '../components/base/Layout';
 import Header from '../components/base/Header';
 import useAuthorsMetadata from '../hooks/useAuthors.hook';
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 import getDayAuthor from '../helpers/Utils';
-import styled, { keyframes } from 'styled-components';
-import { fadeIn } from 'react-animations';
 import {
   DESCRIPTION_LIST_INDICES,
   AUTHOR_LANGUAGE_QUERY,
@@ -25,8 +25,7 @@ export default () => {
   const dayAuthor = getDayAuthor(authors);
   const { surname } = dayAuthor;
 
-  const bounceAnimation = keyframes`${fadeIn
-    }`;
+  const bounceAnimation = keyframes`${fadeIn}`;
   const BouncyDiv = styled.div`
   animation: 1.5s ${bounceAnimation};
 `;
@@ -44,14 +43,14 @@ export default () => {
         <div>
           <div className="day-author">
             <BouncyDiv>
-            <Typography
-              variant="h2"
-              component="h2"
-              gutterBottom
-              className="title"
-            >
-              {t('day-author')}
-            </Typography>
+              <Typography
+                variant="h2"
+                component="h2"
+                gutterBottom
+                className="title"
+              >
+                {t('day-author')}
+              </Typography>
 
               <div className="author-info">
                 <Link to={`/authors/${surname}`}>

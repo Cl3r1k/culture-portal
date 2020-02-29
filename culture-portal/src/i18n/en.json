@@ -40,10 +40,10 @@
     "3) A factor to consider is the difference in the time zones of developers. Our team is 7 hours. A little complexity, but you need to consider"
   ],
   "self-evaluation": "Self evaluation:",
-  "max-points": "Maximum points - 240",
+  "max-points": "Maximum points - 280",
   "min-scope": "Min scope - 50",
   "normal-scope": "Normal scope - 140",
-  "extra-scope": "Extra scope - 70",
+  "extra-scope": "Extra scope - 90",
   "min-scope-data": [
     "+10 Main page + page with a list of authors + author's page (only pages with content without widgets);",
     "+10 Page with team members + page with worklog",
