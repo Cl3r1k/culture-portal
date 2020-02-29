@@ -1,4 +1,5 @@
 import React from 'react';
+import '../i18n/i18n';
 import styled, { keyframes } from 'styled-components';
 import { fadeIn } from 'react-animations';
 import Layout from '../components/base/Layout';
