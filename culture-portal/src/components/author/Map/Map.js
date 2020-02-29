@@ -1,25 +1,29 @@
-import React from 'react';
-import ReactMapboxGl, { ZoomControl } from 'react-mapbox-gl';
-import { MAPBOX_TOKEN, MAPBOX_PROPS } from '../../../helpers/Constants';
-import Pin from './Pin';
+
+import React, { useState } from "react"
+import ReactMapGL from "react-map-gl"
+import { MAPBOX_PROPS } from "../../../helpers/Constants"
+import Pin from "./Pin"
 
 const Map = ({ data: { birth, death } }) => {
-  const Map = ReactMapboxGl({
-    accessToken: MAPBOX_TOKEN,
+  const [viewport, setViewport] = useState({
+    width: MAPBOX_PROPS.viewport.width,
+    height: MAPBOX_PROPS.viewport.height,
+    zoom: birth.location.zoom,
+    latitude: birth.location.lat,
+    longitude: birth.location.lng,
+    mapboxApiAccessToken: MAPBOX_PROPS.viewport.mapboxApiAccessToken,
   });
+
   return (
     <div className="map">
-      <h3>Map</h3>
-      <Map
-        style={MAPBOX_PROPS.mapstyle}
-        containerStyle={MAPBOX_PROPS.containerStyle}
-        center={MAPBOX_PROPS.center}
-        zoom={MAPBOX_PROPS.zoom}
+      <ReactMapGL
+        {...viewport}
+        mapStyle={MAPBOX_PROPS.mapstyle}
+        onViewportChange={(viewport) => { setViewport(viewport) }}
       >
         <Pin content={birth} />
         <Pin content={death} />
-        <ZoomControl />
-      </Map>
+      </ReactMapGL>
     </div>
   );
 };

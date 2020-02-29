@@ -13,6 +13,8 @@ _[Deadline](https://github.com/deadline2020)_
 |   3 hours  | implement search component                    |
 |   2 hours  | implement photo-gallery component             |
 |   3 hours  | add information about poets                   |
+|  2.5 hours | add information about poets in Belarusian     |
+|  2.5 hours | change map component                          |
 
 
 _[MariaV](https://github.com/)_

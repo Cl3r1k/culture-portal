@@ -1,5 +1,5 @@
-import React from 'react';
-import { Popup } from 'react-mapbox-gl';
+import React from "react"
+import { Popup } from "react-map-gl"
 
 const PinPopup = ({
   content: {
@@ -8,21 +8,24 @@ const PinPopup = ({
     location: { lat, lng },
   },
   handleClick,
-}) => (
-  <Popup coordinates={[lng, lat]} style={{ maxWidth: '300px', zIndex: '9' }}>
-    <button
-      className="mapboxgl-popup-close-button"
-      type="button"
-      aria-label="Close popup"
-      onClick={() => handleClick(false)}
-    >
-      ×
-    </button>
-    <p>
-      <strong>{date}</strong>
-    </p>
-    <p>{description}</p>
-  </Popup>
-);
+
+}) => {
+  return (
+    <Popup latitude={lat} longitude={lng}>
+      <button
+        className="mapboxgl-popup-close-button"
+        type="button"
+        aria-label="Close popup"
+        onClick={() => handleClick(false)}
+      >
+        ×
+      </button>
+      <div style={{ maxWidth: "300px", color: "black" }}>
+        <p><strong>{date}</strong></p>
+        <p>{description}</p>
+      </div>
+    </Popup>
+  )
+}
 
 export default PinPopup;
