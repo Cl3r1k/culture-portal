@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Popup } from 'react-mapbox-gl';
+import { Popup } from 'react-map-gl';
 
 const PinPopup = ({
   content: {
@@ -10,24 +10,22 @@ const PinPopup = ({
   },
   handleClick,
 
-}) => {
-  return (
-    <Popup latitude={lat} longitude={lng}>
-      <button
-        className="mapboxgl-popup-close-button"
-        type="button"
-        aria-label="Close popup"
-        onClick={() => handleClick(false)}
-      >
-        ×
-      </button>
-      <div style={{ maxWidth: "300px", color: "black" }}>
-        <p><strong>{date}</strong></p>
-        <p>{description}</p>
-      </div>
-    </Popup>
-  )
-}
+}) => (
+  <Popup latitude={lat} longitude={lng}>
+    <button
+      className="mapboxgl-popup-close-button"
+      type="button"
+      aria-label="Close popup"
+      onClick={() => handleClick(false)}
+    >
+      ×
+    </button>
+    <div style={{ maxWidth: '300px', color: 'black' }}>
+      <p><strong>{date}</strong></p>
+      <p>{description}</p>
+    </div>
+  </Popup>
+);
 
 PinPopup.propTypes = {
   content: PropTypes.shape({

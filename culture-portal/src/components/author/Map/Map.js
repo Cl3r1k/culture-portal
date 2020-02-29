@@ -1,35 +1,54 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import ReactMapboxGl, { ZoomControl } from 'react-mapbox-gl';
-import { MAPBOX_TOKEN, MAPBOX_PROPS } from '../../../helpers/Constants';
+import { useTranslation } from 'react-i18next';
+import ReactMapGL from 'react-map-gl';
+import { MAPBOX_PROPS } from '../../../helpers/Constants';
 import Pin from './Pin';
 
 const Map = ({ data: { birth, death } }) => {
-  const MapBox = ReactMapboxGl({
-    accessToken: MAPBOX_TOKEN,
+  const [viewport, setViewport] = useState({
+    width: MAPBOX_PROPS.viewport.width,
+    height: MAPBOX_PROPS.viewport.height,
+    zoom: birth.location.zoom,
+    latitude: birth.location.lat,
+    longitude: birth.location.lng,
+    mapboxApiAccessToken: MAPBOX_PROPS.viewport.mapboxApiAccessToken,
   });
+  const { t } = useTranslation();
+  const title = t('map-title');
 
   return (
     <div className="map">
-      <h3>Map</h3>
-      <MapBox
-        style={MAPBOX_PROPS.mapstyle}
-        containerStyle={MAPBOX_PROPS.containerStyle}
-        center={MAPBOX_PROPS.center}
-        zoom={MAPBOX_PROPS.zoom}
+      <h3>{title}</h3>
+      <ReactMapGL
+        {...viewport}
+        mapStyle={MAPBOX_PROPS.mapstyle}
+        onViewportChange={(viewport) => { setViewport(viewport); }}
       >
         <Pin content={birth} />
         <Pin content={death} />
-        <ZoomControl />
-      </MapBox>
+      </ReactMapGL>
     </div>
   );
 };
 
 Map.propTypes = {
   data: PropTypes.shape({
-    birth: PropTypes.object,
-    death: PropTypes.object,
+    birth: PropTypes.shape({
+      location: PropTypes.shape({
+        zoom: PropTypes.number,
+        lat: PropTypes.number,
+        lng: PropTypes.number,
+      }),
+    }),
+    death: PropTypes.shape({
+      location: PropTypes.shape({
+        zoom: PropTypes.number,
+        lat: PropTypes.number,
+        lng: PropTypes.number,
+      }),
+    }),
   }).isRequired,
 };
 
