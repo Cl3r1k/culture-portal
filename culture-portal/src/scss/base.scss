@@ -68,13 +68,15 @@
 
   .search-input {
     min-width: 370px;
-    padding: 15px 20px;
+    padding: 15px 45px 15px 20px;
     background: #303030;
     border: 1px solid #6e6e6e;
     color: white;
 
-    @media screen and (max-width: 360px){
-      min-width: 250px;
+    @media screen and (max-width: 378px){
+      max-width: 100%;
+      width: 100%;
+      min-width: auto;
 
     }
   }
@@ -108,4 +110,8 @@
   font-size: 16px;
   font-family: "Roboto Mono";
 
+}
+
+.box-break {
+  word-break: break-all;
 }
