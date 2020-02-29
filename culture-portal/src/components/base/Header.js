@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../i18n/i18n';
 import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Navigation from './Navigation';
