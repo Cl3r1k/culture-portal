@@ -20,6 +20,7 @@ const Developer = ({
 
   return (
     <div className="developer-card box-with-bg">
+      <div>
       <h2 className="developer-card__name">{name}</h2>
       <img src={url} alt={nickName} className="developer-card__photo" />
       <a
@@ -30,10 +31,13 @@ const Developer = ({
       >
         {nickName}
       </a>
+      </div>
+      <div className="developer-card__content">
       <p className="developer-card__description">{description}</p>
       <div className="developer-card__description">
         {t('contribution')}
         <List data={contribution} id={id} />
+      </div>
       </div>
     </div>
   );
