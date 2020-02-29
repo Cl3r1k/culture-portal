@@ -1,5 +1,7 @@
 
-# The Rolling Scopes School — CodeJam-Culture-Portal 2019
+# The Rolling Scopes School — Culture-Portal
+
+## Group №9 (React course, 2020 Q1)
 
 ## Worklog and self evaluation:
 
@@ -9,54 +11,65 @@ _[Deadline](https://github.com/deadline2020)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-|   3 hours  | implement list of authors component           |
-|   3 hours  | implement search component                    |
-|   2 hours  | implement photo-gallery component             |
-|   3 hours  | add information about poets                   |
-|  2.5 hours | add information about poets in Belarusian     |
-|  2.5 hours | change map component                          |
+| 3 hours    | Implement list of authors component           |
+| 3 hours    | Implement search component                    |
+| 2 hours    | Implement photo-gallery component             |
+| 3 hours    | Add information about poets                   |
+| 2.5 hours  | Add information about poets in Belarusian     |
+| 2.5 hours  | Change map component                          |
 
 
 _[MariaV](https://github.com/)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+| 4 hours    | Design development                            |
+| 2 hours    | Implementing the style guide page             |
+| 1 hour     | Material-Ui                                   |
+| 2 hours    | Adding basic components from Material-Ui      |
+| 2 hours    | Add animations                                |
+| 3 hours    | Apply responsive design                       |
 
 
 _[Musmen](https://github.com/musmen)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-|   2 hours  | create poets test data file                   |
-|   3 hours  | implement author-page generation              |
-|   1 hour   | implement list of artist's works              |
-|  0.5 hour  | implement vertical time-line for biography    |
-|   1 hour   | author-page component refactoring             |
-|   2 hours  | implement modal youtube-video window          |
-|  1.5 hours | add portal description and author of the day  |
-|   3 hours  | add information about poets in English        |
-|   3 hours  | add workflow-page with team workflow diagram  |
-|   4 hours  | add technology-page with technology diagram   |
+| 2 hours    | Create poets test data file                   |
+| 3 hours    | Implement author-page generation              |
+| 1 hour     | Implement list of artist's works              |
+| 0.5 hour   | Implement vertical time-line for biography    |
+| 1 hour     | Author-page component refactoring             |
+| 2 hours    | Implement modal youtube-video window          |
+| 1.5 hours  | Add portal description and author of the day  |
+| 3 hours    | Add information about poets in English        |
+| 3 hours    | Add workflow-page with team workflow diagram  |
+| 4 hours    | Add technology-page with technology diagram   |
 
 
-_[niki_night](https://github.com/ViktoriyaVorozhun)_
+_[Niki_night](https://github.com/ViktoriyaVorozhun)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| add hours  | describe task                                 |
+| 2 hours    | Project deployment                            |
+| 2 hours    | Create site pages and navigation              |
+| 3 hours    | Create an activity map                        |
+| 2 hours    | Eslint configuration, bug fix                 |
+| 3 hours    | Design                                        |
+| 1.5 hours  | Refactoring, testing                          |
+| 2 hours    | Bug Fixing                                    |
 
 
 _[Cl3r1k](https://github.com/cl3r1k)_
 
 | time spent | feature                                       |
 | ---------- | --------------------------------------------- |
-| 6h         | Learning main stack (react+gatsby+contentful) |
-| 2h         | put content in 'contentful'                   |
-| 4h         | implement 'team-page'                         |
-| 4h         | implement 'worklog-page'                      |
-| 15h        | implement translation                         |
-| 2h         | refactor                                      |
+| 6 hours    | Learning main stack (react+gatsby+contentful) |
+| 2 hours    | Put content in 'contentful'                   |
+| 4 hours    | Implement 'team-page'                         |
+| 4 hours    | Implement 'worklog-page'                      |
+| 15 hours   | Implement translation                         |
+| 2 hours    | Refactor code                                 |
 
 ### The main difficulties occurred during teamwork:
 1. Organization of teamwork: to structure tasks, allocate responsibilities and deadlines, eliminate duplication, minimize conflicts by code. With a competent approach and the use of modern tools / techniques - it is solved quickly and effectively
@@ -67,7 +80,7 @@ _[Cl3r1k](https://github.com/cl3r1k)_
 ### Self evaluation:
 
 1. #### Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md
-2. #### 28.02.2020 / 29.02.2020
+2. #### Submit 29.02.2020 22:00 / Deadline 29.02.2020 23:59
 
 ### Total
 
