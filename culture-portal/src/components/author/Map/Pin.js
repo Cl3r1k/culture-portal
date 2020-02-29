@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import PinPopup from './PinPopup';
 import PinMarker from './PinMarker';
 
-class Pin extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isPopupOpened: false,
-    };
+class Pin extends React.Component {
+  state = {
+    isPopupOpened: false,
   }
 
   handleClick = (open) => {
@@ -37,11 +32,5 @@ class Pin extends Component {
     );
   }
 }
-
-Pin.propTypes = {
-  content: PropTypes.shape({
-    date: PropTypes.string,
-  }).isRequired,
-};
 
 export default Pin;

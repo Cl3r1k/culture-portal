@@ -14,7 +14,7 @@ const Language = () => {
   };
 
   return (
-    <div className="language" role="button" tabIndex="0" onClick={setLanguage}>
+    <div className="language" onClick={setLanguage}>
       {LANGUAGES.map((language) => (
         <span
           className={language === currentLanguage ? 'active' : undefined}
@@ -27,5 +27,4 @@ const Language = () => {
     </div>
   );
 };
-
 export default Language;

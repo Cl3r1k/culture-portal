@@ -2,7 +2,6 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
-// eslint-disable-next-line no-unused-vars
 const useStyles = makeStyles({
   root: {
     width: '100%',

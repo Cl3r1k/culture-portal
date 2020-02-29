@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Table = ({ caption, children }) => {
   const borderSize = 1;
@@ -15,19 +14,6 @@ const Table = ({ caption, children }) => {
       {children}
     </table>
   );
-};
-
-Table.propTypes = {
-  caption: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element),
-  ]),
-};
-
-Table.defaultProps = {
-  caption: '',
-  children: undefined,
 };
 
 export default Table;

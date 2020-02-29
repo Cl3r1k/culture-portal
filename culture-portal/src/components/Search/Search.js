@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
 const Search = (props) => {
@@ -16,10 +15,6 @@ const Search = (props) => {
       />
     </div>
   );
-};
-
-Search.propTypes = {
-  startSearch: PropTypes.func.isRequired,
 };
 
 export default Search;
