@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TableRow = ({ data, isHeadRow }) => {
   const cellDataList = Object.values(data);
@@ -17,6 +18,15 @@ const TableRow = ({ data, isHeadRow }) => {
       )))}
     </tr>
   );
+};
+
+TableRow.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  isHeadRow: PropTypes.bool,
+};
+
+TableRow.defaultProps = {
+  isHeadRow: false,
 };
 
 export default TableRow;

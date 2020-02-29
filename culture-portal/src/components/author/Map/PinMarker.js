@@ -1,6 +1,7 @@
-import React from "react"
-import { Marker } from "react-map-gl"
-import MapPin from "../../../../static/img/map/map-marker.png"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Marker } from 'react-mapbox-gl';
+import MapPin from '../../../../static/img/map/map-marker.png';
 
 const PinMarker = ({ content: { location: { lat, lng }, }, handleClick, }) => {
   return (
@@ -18,5 +19,15 @@ const PinMarker = ({ content: { location: { lat, lng }, }, handleClick, }) => {
     </Marker>
   )
 }
+
+PinMarker.propTypes = {
+  content: PropTypes.shape({
+    location: PropTypes.shape({
+      lat: PropTypes.number,
+      lng: PropTypes.number,
+    }),
+  }).isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default PinMarker;

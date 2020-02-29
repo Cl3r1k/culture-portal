@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 
 const AuthorCard = ({ author }) => {
@@ -24,6 +25,16 @@ const AuthorCard = ({ author }) => {
       </div>
     </div>
   );
+};
+
+AuthorCard.propTypes = {
+  author: PropTypes.shape({
+    fullName: PropTypes.string,
+    photo: PropTypes.object,
+    description: PropTypes.string,
+    birth: PropTypes.object,
+    death: PropTypes.object,
+  }).isRequired,
 };
 
 export default AuthorCard;

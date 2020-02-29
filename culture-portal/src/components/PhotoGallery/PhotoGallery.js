@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
 import { useTranslation } from 'react-i18next';
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -19,6 +20,10 @@ const PhotoGallery = (props) => {
       </div>
     </div>
   );
+};
+
+PhotoGallery.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default PhotoGallery;
