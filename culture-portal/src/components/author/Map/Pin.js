@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import PinPopup from './PinPopup';
 import PinMarker from './PinMarker';
 
-class Pin extends Component {
+class Pin extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       isPopupOpened: false,
     };
@@ -40,7 +39,11 @@ class Pin extends Component {
 
 Pin.propTypes = {
   content: PropTypes.shape({
-    date: PropTypes.string,
+    location: PropTypes.shape({
+      zoom: PropTypes.number,
+      lat: PropTypes.number,
+      lng: PropTypes.number,
+    }),
   }).isRequired,
 };
 

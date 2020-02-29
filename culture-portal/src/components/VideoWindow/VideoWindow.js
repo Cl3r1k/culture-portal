@@ -23,12 +23,11 @@ class VideoWindow extends React.Component {
   }
 
   render() {
-    const { t } = this.props;
+    const { t, video } = this.props;
     const { isOpen } = this.state;
-    const { video, about } = this.props;
     const { youtubeId, startTime } = video;
 
-    const description = `${about}. ${t('video-description')}`;
+    const description = t('video-description');
     const imageURL = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
     const options = {
       start: startTime,
@@ -59,7 +58,6 @@ VideoWindow.propTypes = {
     youtubeId: PropTypes.string,
     startTime: PropTypes.number,
   }).isRequired,
-  about: PropTypes.string.isRequired,
 };
 
 export default withTranslation()(VideoWindow);
