@@ -1,4 +1,5 @@
 import React from 'react';
+import '../i18n/i18n';
 import { useTranslation } from 'react-i18next';
 import useAuthorsMetadata from '../hooks/useAuthors.hook';
 import Layout from '../components/base/Layout';

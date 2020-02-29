@@ -1,4 +1,5 @@
 import React from 'react';
+import '../i18n/i18n';
 import Layout from '../components/base/Layout';
 import Workflow from '../../static/img/workflow.png';
 import Header from '../components/base/Header';
