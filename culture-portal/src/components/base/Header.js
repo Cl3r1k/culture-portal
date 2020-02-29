@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Navigation from './Navigation';
 import Language from '../common/Language';
@@ -45,7 +46,6 @@ class Header extends React.Component {
       <header className="header-wrapper">
         <Container className="top-header" maxWidth="lg">
           <button
-            role="button"
             type="button"
             className="menu"
             onClick={() => this.handleClick(true)}
@@ -61,5 +61,16 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]),
+};
+
+Header.defaultProps = {
+  children: undefined,
+};
 
 export default Header;

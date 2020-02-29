@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import AuthorsList from '../AuthorsList/AuthorsList';
 import Search from '../Search/Search';
 
@@ -31,6 +32,10 @@ const AuthorsListWrapper = (props) => {
       <AuthorsList filteredArrOfAuthors={filteredArrOfAuthors} />
     </>
   );
+};
+
+AuthorsListWrapper.propTypes = {
+  authors: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default AuthorsListWrapper;

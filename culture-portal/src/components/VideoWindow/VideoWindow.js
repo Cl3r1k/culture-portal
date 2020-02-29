@@ -1,6 +1,7 @@
 import './modal-video.min.css';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import ModalVideo from 'react-modal-video';
 import { withTranslation } from 'react-i18next';
 
@@ -27,7 +28,6 @@ class VideoWindow extends React.Component {
     const { video, about } = this.props;
     const { youtubeId, startTime } = video;
 
-    // TODO: implement translation for 'description'
     const description = `${about}. ${t('video-description')}`;
     const imageURL = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
     const options = {
@@ -52,5 +52,14 @@ class VideoWindow extends React.Component {
     );
   }
 }
+
+VideoWindow.propTypes = {
+  t: PropTypes.func.isRequired,
+  video: PropTypes.shape({
+    youtubeId: PropTypes.string,
+    startTime: PropTypes.number,
+  }).isRequired,
+  about: PropTypes.string.isRequired,
+};
 
 export default withTranslation()(VideoWindow);
