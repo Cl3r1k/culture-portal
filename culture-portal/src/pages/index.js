@@ -23,6 +23,9 @@ export default () => {
   const dayAuthor = getDayAuthor(authors);
   const { surname } = dayAuthor;
 
+  console.log('loaded index page');
+  console.log('index page i18n.language:', i18n.language);
+
   return (
     <main className="app">
       <Header className="home-page">
