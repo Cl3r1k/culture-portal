@@ -1,0 +1,14 @@
+.portal-description {
+  max-width: 1020px;
+  opacity: 0.8;
+  width: 70%;
+  flex-direction: column;
+  display: flex;
+  margin: 10px auto;
+  padding-bottom: 15px;
+  text-align: justify;
+
+  @media screen and (max-width: 520px){
+    width: 96%;
+  }
+}

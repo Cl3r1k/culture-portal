@@ -1,0 +1,93 @@
+.heading1 {
+  @include heading-style(30, 28);
+}
+
+.heading2 {
+  @include heading-style(26, 24);
+}
+
+.heading3 {
+  @include heading-style(22, 20);
+}
+
+.heading4 {
+  @include heading-style(18, 18);
+}
+
+.heading5 {
+  @include heading-style(14, 16);
+}
+
+.heading6 {
+  @include heading-style(12, 14);
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.base-title, .base-title_md {
+  color: #434343;
+  // color: rgba(255, 255, 255, 0.25);
+  margin-bottom: -23px;
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  font-style: oblique;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 900;
+  text-align: end;
+  font-family: 'Pattaya';
+  //font-family: 'Ruslan Display';
+
+  &_md {
+    font-size: 2.5rem;
+    margin-bottom: -13px;
+  }
+
+  @media screen and (max-width:  768px){
+    font-size: 3rem;
+    &_md {
+      font-size: 1.8rem;
+      margin-bottom: -10px;
+    }
+  }
+
+  @media screen and (max-width: 520px){
+    font-size: 2rem;
+    &_md {
+      font-size: 1.6rem;
+      margin-bottom: -8px;
+    }
+  }
+
+
+}
+
+.small-title {
+  color: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.page-title {
+  @include heading-style(60, 100);
+  text-align: center;
+  font-weight: 900;
+  opacity: .25;
+  font-family: 'Pattaya';
+ // font-family: 'Ruslan Display';
+  text-shadow: 4px 4px black;
+  @media screen and (max-width: 375px){
+    @include heading-style(40, 50);
+  }
+}

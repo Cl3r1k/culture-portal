@@ -1,0 +1,24 @@
+.wrapper {
+  //background: #757575;
+
+  padding: 0 0 40px;
+  margin-bottom: 10px;
+
+
+  &.MuiContainer-root {
+   // padding: 0;
+  }
+}
+
+.home-page-wrapper, .header-wrapper, .footer {
+  background-image: url("../../static/img/bg.png");
+}
+
+
+.footer {
+  padding: 15px 30px;
+}
+
+body {
+  background-color: #303030;
+}
