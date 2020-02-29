@@ -10,7 +10,7 @@
 }
 
 .table, .table thead, .table tbody {
-  min-width: 650px;
+  min-width: 200px;
   width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
@@ -40,6 +40,7 @@
     color: #fff;
     font-weight: 500;
     line-height: 1.5rem;
+    word-break: break-word;
   }
 
   th {

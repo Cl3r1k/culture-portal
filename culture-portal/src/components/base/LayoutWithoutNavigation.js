@@ -17,7 +17,9 @@ export default ({ children }) => {
       <Container maxWidth="lg" className="wrapper">
         {children}
       </Container>
-      <div className="footer">(c) RSS-React-group-9 2020</div>
+      <div className="footer">
+        <p className="footer-content"> (c) RSS-React-group-9 2020</p>
+      </div>
     </MuiThemeProvider>
   );
 };

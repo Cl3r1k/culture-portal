@@ -1,11 +1,13 @@
 %author-page-title {
-  color: rgba(255, 255, 255, 0.25);
+ // color: rgba(255, 255, 255, 0.25);
+  color: #464646;
   text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.7);
   font-style: oblique;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 900;
   text-align: end;
   margin: 40px 0 10px 0;
+  font-family: "Pattaya";
 }
 
 
@@ -67,6 +69,10 @@
   }
   @media screen and (max-width: 520px) {
     padding: 0 1rem 0 0;
+  }
+
+  h3, h1 {
+  font-family: "Pattaya";
   }
 }
 
