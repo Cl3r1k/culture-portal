@@ -8,6 +8,7 @@ const Map = ({ data: { birth, death } }) => {
   const MapBox = ReactMapboxGl({
     accessToken: MAPBOX_TOKEN,
   });
+
   return (
     <div className="map">
       <h3>Map</h3>
