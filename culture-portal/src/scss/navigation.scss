@@ -1,5 +1,9 @@
 .navigation {
 
+  @media screen and (max-width: 520px){
+    font-size: 13px;
+  }
+
   ul {
     display: flex;
     justify-content: space-around;
@@ -18,6 +22,10 @@
         &.active-page {
           opacity: 1;
           font-weight: 600;
+        }
+
+        &:hover {
+          opacity: 1;
         }
       }
 

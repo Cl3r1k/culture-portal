@@ -10,10 +10,10 @@
     "home": "Главная",
     "authors": "Авторы",
     "team": "Команда",
-    "worklog": "Журнал событий",
-    "styleguide": "Гид по стилю",
-    "workflow": "Рабочий процесс",
-    "technology": "Технологии проекта"
+    "worklog": "События",
+    "styleguide": "Стили",
+    "workflow": "Процессы",
+    "technology": "Технологии"
   },
   "biography-header": "Биография",
   "AUTHOR_WORKS": {
