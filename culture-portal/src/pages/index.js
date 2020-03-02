@@ -26,9 +26,10 @@ export default () => {
   const { surname } = dayAuthor;
 
   const bounceAnimation = keyframes`${fadeIn}`;
-  const BouncyDiv = styled.div`
-  animation: 1.5s ${bounceAnimation};
-`;
+  const BouncyDiv = styled.div`animation: 1.5s ${bounceAnimation};`;
+
+  console.log('%c in index.js incoming dayAuthor: ', 'color: red;', dayAuthor);
+  console.log('%c in index.js incoming surname: ', 'color: red;', surname);
 
   return (
     <main className="app">
