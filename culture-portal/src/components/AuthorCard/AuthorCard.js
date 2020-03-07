@@ -6,6 +6,9 @@ const AuthorCard = ({ author }) => {
   const {
     fullName, photo, description, birth, death,
   } = author;
+  console.log('%c in AuthorCard incoming author: ', 'color: pink', author);
+  console.log('%c in AuthorCard incoming fullName: ', 'color: pink', fullName);
+
   return (
     <div className="author-card">
       <div>

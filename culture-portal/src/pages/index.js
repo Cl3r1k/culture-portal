@@ -53,7 +53,7 @@ export default () => {
                 {t('day-author')}
               </Typography>
 
-              <div className="author-info">
+              <div className={`author-info link-to-${surname}`}>
                 <Link to={`/authors/${surname}`}>
                   <AuthorCard author={dayAuthor} />
                 </Link>
